@@ -1,0 +1,403 @@
+metadata:
+  key: prioritization-and-sla-adherence
+  template: false
+  name: Prioritization & SLA Adherence
+  knowledgeModelKey: -salesforce-activity-data-model-copy
+  knowledgeObjectId: CASE
+  profileView: true
+variables:
+  - id: d97da0ad-6dda-49cc-bddc-1e976a848d97
+    name: currentDimension_1
+    defaultValue: CASE.SERVICE__C
+    type: STRING
+layout:
+  rows:
+    - id: row_858f2cb9-8702-4aaa-913c-b5b015cc7a67
+      growHeight: true
+      columns:
+        - id: tab-d9431aa2-d942-4588-9550-b0d2e748fbcd
+          layout:
+            rows:
+              - id: row_5e23c893-18d9-415b-8e8b-8836ccafee79
+                columns:
+                  - id: column_d84e10ee-41e0-46a7-8cbb-b86090c4eab1
+                    layout:
+                      rows:
+                        - id: row_c4226c3c-514c-48ac-a5c5-7b4c1cdbe8fe
+                          growHeight: true
+                          removePadding: false
+                          columns:
+                            - id: column_b0355094-0afa-4d0c-8626-4e707390cab6
+                              layout:
+                                rows:
+                                  - id: test_row_4
+                                    removePadding: false
+                                    columns:
+                                      - id: test_column
+                                        componentId: text-box-75f9c4b8-79a2-4ec9-9d4a-b88c1f8fcbcf
+                                        size: "1"
+                                        type: panel
+                                        order: 100
+                                    height: ""
+                                    order: 100
+                                  - id: row_be144b84-b7a1-40cb-9328-0c9f2d43676a
+                                    removePadding: true
+                                    columns:
+                                      - id: column_e3d67ac8-64ba-4154-b9ba-aacad186c983
+                                        componentId: kpi-list-e3a9cac5-b9c4-47ed-a427-b01e24b4186f
+                                        size: "1"
+                                        type: panel
+                                        order: 100
+                                    order: 200
+                                  - id: row_80a96289-853d-443e-8c48-d1569cb8160a
+                                    columns:
+                                      - id: column_04de9584-2a42-4b34-a61b-9752f06d5e32
+                                        componentId: kpi-list-9d0b54fa-ca36-4d20-9cb0-42d4736a28a9
+                                        size: "1"
+                                        order: 0
+                                    order: 225
+                                  - id: row_869e5e4a-569a-4e3c-8487-d9e17ee4ef10
+                                    columns:
+                                      - id: column_70ce3a74-c73e-4c97-accd-cd1468d34787
+                                        componentId: text-box-d4e79b7f-c811-4129-8b00-94091fe8bcc0
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                      - id: column_27248c39-6acb-486e-b2e4-05d505240d69
+                                        componentId: text-box-d4e79b7f-c811-4129-8b00-94091fe8bcc0
+                                        size: "2"
+                                        order: 200
+                                      - id: column_1ce907a9-b810-435f-b1c8-310c249220eb
+                                        componentId: dropdown-list-a27b037f-4b18-40e6-b57e-bd058409e7f6
+                                        size: "1"
+                                        order: 300
+                                    order: 250
+                                  - id: row_75d588f2-5477-40d7-8e7a-b21620d8bdc4
+                                    growHeight: true
+                                    removePadding: false
+                                    columns:
+                                      - id: column_ad826bb1-0bff-4c07-98dd-4dab83a5cac2
+                                        componentId: bar_chart
+                                        size: "1"
+                                        type: panel
+                                        height: ""
+                                        order: 100
+                                    order: 300
+                              size: "1"
+                              type: panel
+                              order: 100
+                            - id: column_8ecd99f0-f527-4dcd-91a8-e8bd23960cd0
+                              layout:
+                                rows:
+                                  - id: test_row_3
+                                    growHeight: false
+                                    removePadding: false
+                                    columns:
+                                      - id: some_id
+                                        componentId: text-box-ed8869a5-4c37-46aa-b99b-f3d8097efe03
+                                        size: "1"
+                                        type: panel
+                                        order: 200
+                                    order: 200
+                                  - id: row_9bbf2dfc-6e58-4cc2-8be7-fded3746f58f
+                                    growHeight: true
+                                    columns:
+                                      - id: 8b4c84e1-dac2-42b7-a014-a7cab3a808e1
+                                        tabs:
+                                          - id: tab-da1ace95-bd8f-4939-b6fe-95a23bc43867
+                                            layout:
+                                              rows:
+                                                - id: row_460fb0be-6879-41fb-bbbd-948cb1a02ac8
+                                                  growHeight: false
+                                                  columns:
+                                                    - id: column_d049d016-274b-4580-b390-8a4d9903ee55
+                                                      componentId: Root_Cause_Table
+                                                      size: "1"
+                                                      order: 100
+                                                  height: ""
+                                                  order: 100
+                                            label: Customers at Risk of SLA Breach
+                                            order: 100
+                                          - id: tab-9d7b500b-7a8b-45e6-a0e6-2a937e06b5e8
+                                            layout:
+                                              rows:
+                                                - id: row_f8b3a614-5670-416c-8bfa-fe954badeab4
+                                                  columns:
+                                                    - id: column_408d03e7-e995-4b97-92a6-3b55d592e771
+                                                      layout:
+                                                        rows:
+                                                          - id: row_50e37887-9bca-429f-b988-6a4e2c773bdb
+                                                            columns:
+                                                              - id: column_37f4cd98-94b5-4423-9bad-2b5b99ead75a
+                                                                componentId: ""
+                                                                size: "1"
+                                                                order: 100
+                                                            order: 100
+                                                          - id: row_2ac5a91c-1749-4248-9668-3abc3b12957c
+                                                            removePadding: false
+                                                            columns:
+                                                              - id: column_f28d1fe6-1189-4307-974d-3de8b346bb0b
+                                                                componentId: text-box-60c1de5b-2a01-41d3-9807-dc01cf31307e
+                                                                size: "1"
+                                                                type: panel
+                                                                order: 100
+                                                            order: 200
+                                                      size: "1"
+                                                      order: 50
+                                                    - id: column_ec07fc50-5f08-47c5-89cc-6a796f392330
+                                                      componentId: dropdown-list-a27b037f-4b18-40e6-b57e-bd058409e7f6
+                                                      size: "0.3"
+                                                      type: default
+                                                      order: 100
+                                                  order: 50
+                                                - id: row_a0aabe35-a1ee-4c90-b4ec-7100ac8dcc1e
+                                                  growHeight: true
+                                                  columns:
+                                                    - id: column_1b4c3576-e43e-4fb2-8308-552475c2bfa9
+                                                      componentId: table-d92bed86-06f2-4ce5-91ec-a5039d757085
+                                                      size: "1"
+                                                      order: 100
+                                                  order: 100
+                                            label: General Drilldown
+                                            order: 200
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                    order: 300
+                                  - id: row_e8145d79-9302-4b94-a0a5-e7eaf055e6d9
+                                    columns:
+                                      - id: column_cc186799-b684-4d12-b3fd-487e340b3ae5
+                                        componentId: button-list-66c0adaa-8ad0-4e20-a924-c675d8370667
+                                        size: "1"
+                                        type: default
+                                        order: 50
+                                    order: 400
+                              size: "1"
+                              type: panel
+                              order: 200
+                          order: 28
+                    size: "1"
+                    order: 100
+                order: 100
+          size: "1.1"
+          order: 50
+      order: 14
+components:
+  - id: Root_Cause_Table
+    type: table
+    settings:
+      name: " "
+      options:
+        selectable: false
+        autoAlignment: true
+        autoShrink: true
+      data:
+        columns:
+          - field: SLO_CALCULATIONS.CASENUMBER
+            id: 458ab279-7363-4724-b435-698e750661f4
+            order: 100
+          - field: SLO_CALCULATIONS.CREATEDDATE
+            id: 884a0fe2-3a14-4f04-ac6e-2d122f339477
+            order: 200
+          - field: slo_breach_duration
+            id: 721639dd-5aa1-4735-b023-f806fa66996c
+            order: 300
+          - field: cost_per_breach
+            id: ab8f10d7-b1a6-40ff-a86d-6a8bc51b9ef7
+            order: 400
+          - field: SLO_CALCULATIONS.CAUSE_CODE__C
+            id: af9cfde5-177f-42aa-a654-47a4355b883e
+            order: 500
+          - field: SLO_CALCULATIONS.SERVICE__C
+            id: a35f579a-8cc4-4130-8e80-ad769775359d
+            order: 600
+          - field: SLO_CALCULATIONS.PRODUCT_AREA__C
+            id: 302971bc-6268-4a33-971e-7f4cd328858a
+            order: 700
+        distinct: true
+        sortBy:
+          - field: slo_breach_impact
+            direction: DESC
+            id: f8a66756-b2d3-46de-8238-c09eceb90b18
+            order: 100
+          - field: cost_per_breach
+            direction: ASC
+            id: 877ea069-c584-4e5d-9c59-3bf82d272756
+            order: 200
+  - id: text-box-75f9c4b8-79a2-4ec9-9d4a-b88c1f8fcbcf
+    type: text-box
+    settings:
+      name: Impact of Frequent SLA Breaches
+      content: <p align='justify'>SLA Breaches and a lack of intelligent customer
+        prioritization <b> decrease customer satisfaction and cause SLA penalty
+        fees.</b></p>
+      infoText:
+        title: Impact of Frequent Delivery Date Changes
+        content: Celonis visualizes the impact of the execution gap in detail. <br><br>
+          <b>METRIC NAME</b><br>METRIC DESCRIPTION.<br><br><b>METRIC
+          NAME</b><br>METRIC DESCRIPTION.<br><br><b>Realization
+          Potential</b><br>DESCRIPTION. The number is based on benchmarks of
+          existing Celonis customers and validated by their
+          success.<br><br><b>Impact</b><br>The resulting possible savings that
+          can be realized when introducing Celonis to close this specific
+          execution gap.
+      title: ""
+  - id: text-box-ed8869a5-4c37-46aa-b99b-f3d8097efe03
+    type: text-box
+    settings:
+      name: Root Cause Detection
+      content: <p align='justify'><b>The lack of real-time SLA traceability </b>
+        causes false prioritization.</p>
+      infoText:
+        title: Root Cause
+        content: Celonis helps not only to analyze the execution gap and its impact but
+          also to identify the actual root cause causing the execution
+          gap.<br><br> <b>ROOT CAUSE TITLE</b><br>ROOT CAUSE
+          DESCRIPTION.<br><br><b>ROOT CAUSE TITLE</b><br>ROOT CAUSE DESCRIPTION.
+      title: ""
+  - id: kpi-list-e3a9cac5-b9c4-47ed-a427-b01e24b4186f
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: slo_breach_impact
+            id: af7006a8-ed21-40b3-9c27-072d27186d5e
+            order: 100
+            show: true
+          - kpi: cost_per_breach
+            id: 0f68670d-59f1-4951-9ad7-0f7f8a9e5dd3
+            order: 200
+            show: true
+          - kpi: slo_breach_rate
+            id: d77fb90f-46b1-4da1-a53a-a77fa9a101a8
+            order: 300
+            show: true
+      options:
+        showTarget: false
+        showSettings: false
+        showBenchmark: true
+        showPriority: true
+        size: sm
+      styles:
+        overflow: full-width
+        position:
+          horizontal: full
+          vertical: bottom
+  - id: table-d92bed86-06f2-4ce5-91ec-a5039d757085
+    type: table
+    settings:
+      name: " "
+      options:
+        autoAlignment: true
+      data:
+        columns:
+          - field: SO.${currentDimension_1}
+            id: Material
+            order: 100
+          - field: slo_breach_impact
+            id: Deliver Date Change Impact
+            order: 300
+        distinct: true
+        sortBy:
+          - field: slo_breach_impact
+            direction: DESC
+  - id: dropdown-list-a27b037f-4b18-40e6-b57e-bd058409e7f6
+    type: dropdown-list
+    settings:
+      floatingPlaceholder: true
+      styles:
+        overflow: line-break
+        position:
+          horizontal: center
+          vertical: center
+      data:
+        columns:
+          - attribute: ACCOUNT.NAME
+            id: 100
+            order: 100
+            displayName: Dimension
+            selected: Material
+            onClick:
+              update:
+                variables:
+                  - name: currentDimension_1
+  - id: text-box-60c1de5b-2a01-41d3-9807-dc01cf31307e
+    type: text-box
+    settings:
+      title: Drilldown by ${currentDimension_1}
+  - id: button-list-66c0adaa-8ad0-4e20-a924-c675d8370667
+    type: button-list
+    settings:
+      buttons:
+        - label: Set up Action Flow
+          icon: board-charts
+          variant: primary
+          order: 100
+          id: fee30f76-78a2-4628-8fee-379838c2e817
+          onClick:
+            navigateTo:
+              url: /package-manager/ui/by-keys?packageKey=it-service-mgmt-ems&assetKey=sla-breach-avoid-churn&views=true
+              openInNewTab: true
+              placeholders: []
+  - id: bar_chart
+    type: chart
+    settings:
+      encodings:
+        x:
+          field: SLO_CALCULATIONS.CAUSE_CODE__C
+          axis:
+            position: bottom
+        y:
+          field: number_of_slo_breaches
+      visuals:
+        - mark:
+            type: bar
+            bandwidth: 0
+          encodings: {}
+          id: 77325a86-ceca-4915-9fde-2d7e975c8a8f
+          order: 100
+      limit: 1000
+      sortBy: []
+  - id: button-list-b352edcd-66ce-4255-9080-ddbeb3355b5c
+    type: button-list
+    settings:
+      buttons:
+        - label: Priotitized List
+          id: b8e4af28-915b-4218-950f-6e08cc67ec9b
+          order: 100
+          variant: primary
+          onClick:
+            routerLink: https://mpa-order-management-execution-app.try.celonis.cloud/package-manager/ui/studio/ui/assets/deeb5a4c-5a0f-4945-a3e3-aa1357737c9f?extension-sales-order-table-csr-tab-tables-column=sales-orders-tab
+  - id: button-list-d09a2bee-c907-4a5d-89a5-cd64e641b8d8
+    type: button-list
+    settings:
+      buttons:
+        - label: Open Execution App
+          id: 6106f7e8-5278-4e77-9709-ae405fd0b4df
+          order: 100
+          onClick:
+            href: https://mpa-order-management-execution-app.try.celonis.cloud/package-manager/ui/views/ui/assets/deeb5a4c-5a0f-4945-a3e3-aa1357737c9f?extension-sales-order-table-csr-tab-tables-column=sales-orders-tab
+            openInNewTab: true
+          variant: neutral
+  - id: text-box-d4e79b7f-c811-4129-8b00-94091fe8bcc0
+    type: text-box
+    settings:
+      title: ""
+      content: " "
+  - id: kpi-list-9d0b54fa-ca36-4d20-9cb0-42d4736a28a9
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: average_slo_breach_in_days
+            show: true
+            id: 33bf1cb0-3682-4e40-982f-94c1d61f95b3
+            order: 100
+          - kpi: number_of_slo_breaches
+            show: true
+            id: b4960498-c543-46fd-a1cc-91f38f147fef
+            order: 200
+          - kpi: slo_breach_duration_per_case
+            show: true
+            id: 89a1ea7d-e451-4608-9b87-ce4c6094c072
+            order: 300
