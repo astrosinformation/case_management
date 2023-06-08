@@ -1,0 +1,383 @@
+metadata:
+  key: dd-problem-incident-mapping
+  template: false
+  name: Problem Incident Mapping
+  knowledgeModelKey: -salesforce-activity-data-model-copy
+  knowledgeObjectId: CASE
+  profileView: true
+variables:
+  - id: 956f534f-1677-4fd9-a3e7-883e7059d00e
+    name: currentDimension_1
+    defaultValue: Material
+    type: STRING
+layout:
+  rows:
+    - id: row_858f2cb9-8702-4aaa-913c-b5b015cc7a67
+      growHeight: true
+      columns:
+        - id: tab-d9431aa2-d942-4588-9550-b0d2e748fbcd
+          layout:
+            rows:
+              - id: row_5e23c893-18d9-415b-8e8b-8836ccafee79
+                growHeight: true
+                columns:
+                  - id: column_d84e10ee-41e0-46a7-8cbb-b86090c4eab1
+                    layout:
+                      rows:
+                        - id: row_c4226c3c-514c-48ac-a5c5-7b4c1cdbe8fe
+                          growHeight: true
+                          removePadding: false
+                          columns:
+                            - id: column_b0355094-0afa-4d0c-8626-4e707390cab6
+                              layout:
+                                rows:
+                                  - id: test_row_4
+                                    removePadding: false
+                                    columns:
+                                      - id: test_column
+                                        componentId: text-box-75f9c4b8-79a2-4ec9-9d4a-b88c1f8fcbcf
+                                        size: "1"
+                                        type: panel
+                                        order: 100
+                                    height: ""
+                                    order: 100
+                                  - id: row_be144b84-b7a1-40cb-9328-0c9f2d43676a
+                                    growHeight: false
+                                    removePadding: true
+                                    columns:
+                                      - id: column_e3d67ac8-64ba-4154-b9ba-aacad186c983
+                                        componentId: kpi-list-e3a9cac5-b9c4-47ed-a427-b01e24b4186f
+                                        size: "1"
+                                        type: panel
+                                        order: 100
+                                    order: 200
+                                  - id: row_75d588f2-5477-40d7-8e7a-b21620d8bdc4
+                                    growHeight: true
+                                    removePadding: false
+                                    columns:
+                                      - id: column_ad826bb1-0bff-4c07-98dd-4dab83a5cac2
+                                        componentId: bar_chart
+                                        size: "1"
+                                        type: panel
+                                        height: ""
+                                        order: 100
+                                    order: 300
+                              size: "1"
+                              type: panel
+                              order: 100
+                            - id: column_8ecd99f0-f527-4dcd-91a8-e8bd23960cd0
+                              layout:
+                                rows:
+                                  - id: test_row_3
+                                    growHeight: false
+                                    removePadding: false
+                                    columns:
+                                      - id: some_id
+                                        componentId: text-box-ed8869a5-4c37-46aa-b99b-f3d8097efe03
+                                        size: "1"
+                                        type: panel
+                                        order: 200
+                                    order: 200
+                                  - id: row_9bbf2dfc-6e58-4cc2-8be7-fded3746f58f
+                                    growHeight: true
+                                    columns:
+                                      - id: 8b4c84e1-dac2-42b7-a014-a7cab3a808e1
+                                        tabs:
+                                          - id: tab-da1ace95-bd8f-4939-b6fe-95a23bc43867
+                                            layout:
+                                              rows:
+                                                - id: row_460fb0be-6879-41fb-bbbd-948cb1a02ac8
+                                                  growHeight: false
+                                                  columns:
+                                                    - id: column_183bde13-4810-429f-a992-4cfc488ac311
+                                                      componentId: table-e0d6810b-bf10-44b6-b0c8-1f46de937f00
+                                                      size: "1"
+                                                      type: default
+                                                      height: ""
+                                                      order: 100
+                                                  height: ""
+                                                  order: 100
+                                                - id: row_efc68653-9622-4e59-bd74-3c97387c8c96
+                                                  growHeight: true
+                                                  columns:
+                                                    - id: column_7ce9ad49-f8b6-42c9-925b-a19e1ef4cc67
+                                                      componentId: text-box-dcc63d3c-8d65-4972-8a91-494f134032ae
+                                                      size: "1"
+                                                      order: 0
+                                                  order: 200
+                                            label: Problem Incident Mapping by Calling Reason
+                                            order: 100
+                                          - id: tab-9d7b500b-7a8b-45e6-a0e6-2a937e06b5e8
+                                            layout:
+                                              rows:
+                                                - id: row_f8b3a614-5670-416c-8bfa-fe954badeab4
+                                                  columns:
+                                                    - id: column_408d03e7-e995-4b97-92a6-3b55d592e771
+                                                      layout:
+                                                        rows:
+                                                          - id: row_50e37887-9bca-429f-b988-6a4e2c773bdb
+                                                            growHeight: true
+                                                            columns:
+                                                              - id: column_37f4cd98-94b5-4423-9bad-2b5b99ead75a
+                                                                componentId: ""
+                                                                size: "1"
+                                                                order: 100
+                                                            order: 100
+                                                          - id: row_2ac5a91c-1749-4248-9668-3abc3b12957c
+                                                            growHeight: true
+                                                            removePadding: false
+                                                            columns:
+                                                              - id: column_f28d1fe6-1189-4307-974d-3de8b346bb0b
+                                                                componentId: text-box-60c1de5b-2a01-41d3-9807-dc01cf31307e
+                                                                size: "1"
+                                                                type: panel
+                                                                order: 100
+                                                            order: 200
+                                                      size: "1"
+                                                      order: 50
+                                                    - id: column_ec07fc50-5f08-47c5-89cc-6a796f392330
+                                                      componentId: dropdown-list-a27b037f-4b18-40e6-b57e-bd058409e7f6
+                                                      size: "0.3"
+                                                      type: default
+                                                      order: 100
+                                                  order: 50
+                                                - id: row_a0aabe35-a1ee-4c90-b4ec-7100ac8dcc1e
+                                                  growHeight: true
+                                                  columns:
+                                                    - id: column_1b4c3576-e43e-4fb2-8308-552475c2bfa9
+                                                      componentId: table-d92bed86-06f2-4ce5-91ec-a5039d757085
+                                                      size: "1"
+                                                      order: 100
+                                                  order: 100
+                                            label: General Drilldown
+                                            order: 200
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                    order: 300
+                                  - id: row_e8145d79-9302-4b94-a0a5-e7eaf055e6d9
+                                    growHeight: true
+                                    columns:
+                                      - id: column_cc186799-b684-4d12-b3fd-487e340b3ae5
+                                        componentId: button-list-66c0adaa-8ad0-4e20-a924-c675d8370667
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                    order: 400
+                              size: "1"
+                              type: panel
+                              height: ""
+                              order: 200
+                          order: 28
+                    size: "1"
+                    order: 100
+                order: 100
+          size: "1"
+          type: ""
+          order: 50
+      order: 14
+components:
+  - id: Root_Cause_Table
+    type: table
+    settings:
+      name: " "
+      options:
+        hideEmptyRows: false
+        selectable: false
+        autoAlignment: true
+        showPagination: false
+        allowInvisibleColumns: false
+      data:
+        columns:
+          - field: CASE.SERVICE__C
+            id: 63f497e7-c5d2-453d-9242-900f815f56a3
+            order: 100
+          - field: number_of_poorly_defined_incidents
+            id: 409f0348-3f63-4c9c-9ba3-f24bff497b9d
+            order: 200
+          - field: impact_of_poorly_defined_incidents
+            id: bb810f45-94a0-4fb6-a834-c417c8a76518
+            order: 300
+        distinct: true
+        sortBy:
+          - field: impact_of_poorly_defined_incidents
+            direction: DESC
+            id: 6698ee1e-9a16-4fda-bf9d-8eef78aa1896
+            order: 100
+          - field: number_of_poorly_defined_incidents
+            direction: DESC
+            id: a16cd4ed-66c6-491b-8532-9faf95655daa
+            order: 200
+  - id: text-box-75f9c4b8-79a2-4ec9-9d4a-b88c1f8fcbcf
+    type: text-box
+    settings:
+      name: Impact - Lack of Problem-Incident Mapping
+      content: <p align='justify'>A lack of intelligent problem-incident mapping
+        <b>increases the manual effort to correctly indentify root causes and
+        provide efficient solutions</b>. Also, having a low-quality
+        problem-incident mapping decreases the chance of identifying structural
+        issues that could be solved once instead of case by case.
+      infoText:
+        title: Impact of Frequent Delivery Date Changes
+        content: Celonis visualizes the impact of the execution gap in detail. <br><br>
+          <b>METRIC NAME</b><br>METRIC DESCRIPTION.<br><br><b>METRIC
+          NAME</b><br>METRIC DESCRIPTION.<br><br><b>Realization
+          Potential</b><br>DESCRIPTION. The number is based on benchmarks of
+          existing Celonis customers and validated by their
+          success.<br><br><b>Impact</b><br>The resulting possible savings that
+          can be realized when introducing Celonis to close this specific
+          execution gap.
+      title: ""
+  - id: text-box-ed8869a5-4c37-46aa-b99b-f3d8097efe03
+    type: text-box
+    settings:
+      name: Root Cause Detection
+      content: <p align='justify'> The problem-incident mapping is highly affected by
+        a lack of visibility into the real problem causes due to <b>wrong
+        qualification</b> during calls as well as a <b>lack of capacity to group
+        and analyze cases</b>. This leads to even higher manual effort and labor
+        productivity in return.
+      infoText:
+        title: Root Cause
+        content: Celonis helps not only to analyze the execution gap and its impact but
+          also to identify the actual root cause causing the execution
+          gap.<br><br> <b>ROOT CAUSE TITLE</b><br>ROOT CAUSE
+          DESCRIPTION.<br><br><b>ROOT CAUSE TITLE</b><br>ROOT CAUSE DESCRIPTION.
+      title: ""
+  - id: kpi-list-e3a9cac5-b9c4-47ed-a427-b01e24b4186f
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: effort_per_case_of_poorly_defined_incident
+            id: c54bce9c-5a2a-458a-808f-55b9b6a628d7
+            order: 100
+            show: true
+          - kpi: number_of_poorly_defined_incidents
+            id: 22cd2661-1157-4d19-a5eb-b1b183f0dc98
+            order: 200
+            show: true
+          - kpi: impact_of_poorly_defined_incidents
+            id: 8e114139-6040-4dae-89e3-c81df897db19
+            order: 400
+            show: true
+      options:
+        showTarget: false
+        showSettings: false
+        showBenchmark: true
+        showPriority: true
+        size: sm
+      styles:
+        overflow: full-width
+        position:
+          horizontal: full
+          vertical: bottom
+  - id: table-d92bed86-06f2-4ce5-91ec-a5039d757085
+    type: table
+    settings:
+      name: " "
+      options:
+        hideEmptyRows: false
+        selectable: false
+        preventLineBreak: false
+        dense: false
+        autoAlignment: true
+        showPagination: false
+      data:
+        columns:
+          - field: CASE.ISSUE_TYPE__C
+            id: 28ae0b83-b1be-4008-a75f-7890837393ad
+            order: 100
+          - field: number_of_poorly_defined_incidents
+            id: bae619a3-3066-4700-b2ef-d8892e5137ad
+            order: 200
+          - field: impact_of_poorly_defined_incidents
+            id: c8954495-cad5-4adf-bc41-d215f2d8ca47
+            order: 300
+        distinct: true
+        sortBy:
+          - field: impact_of_poorly_defined_incidents
+            direction: DESC
+            id: eb834cd4-3cdd-4298-b174-ee72eee3aa89
+            order: 100
+  - id: dropdown-list-a27b037f-4b18-40e6-b57e-bd058409e7f6
+    type: dropdown-list
+    settings:
+      floatingPlaceholder: true
+      styles:
+        overflow: line-break
+        position:
+          horizontal: center
+          vertical: center
+      data:
+        columns:
+          - attribute: CASE.PRODUCT_AREA__C
+            id: 100
+            order: 100
+            displayName: Dimension
+            selected: Material
+            onClick:
+              update:
+                variables:
+                  - name: currentDimension_1
+  - id: text-box-60c1de5b-2a01-41d3-9807-dc01cf31307e
+    type: text-box
+    settings:
+      title: Drilldown by Incident Type
+      content: ""
+  - id: button-list-66c0adaa-8ad0-4e20-a924-c675d8370667
+    type: button-list
+    settings:
+      buttons:
+        - label: Set up Action Flow
+          icon: board-charts
+          variant: primary
+          order: 100
+          id: fee30f76-78a2-4628-8fee-379838c2e817
+          onClick:
+            navigateTo:
+              url: /package-manager/ui/by-keys?packageKey=it-service-mgmt-ems&assetKey=entry-errors-1&views=true
+              openInNewTab: true
+              placeholders: []
+  - id: bar_chart
+    type: chart
+    settings:
+      encodings:
+        x:
+          field: CASE.PRODUCT_AREA__C
+        y:
+          field: number_of_poorly_defined_incidents
+      visuals:
+        - mark:
+            type: bar
+            bandwidth: 0
+          id: 77325a86-ceca-4915-9fde-2d7e975c8a8f
+          order: 100
+      limit: 1000
+  - id: text-box-dcc63d3c-8d65-4972-8a91-494f134032ae
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: ""
+  - id: table-e0d6810b-bf10-44b6-b0c8-1f46de937f00
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASE.SERVICE__C
+            id: 095983cd-3126-4ffa-852f-4a7848185787
+            order: 100
+          - field: number_of_poorly_defined_incidents
+            id: 952f00ce-d135-4365-9f5a-e21ed362025e
+            order: 200
+          - field: impact_of_poorly_defined_incidents
+            id: 045900f3-c77b-4c81-a5a4-e58c34f6f2a1
+            order: 300
+        sortBy:
+          - field: number_of_poorly_defined_incidents
+            direction: DESC
+            id: 67456bb9-50ee-4dfd-a7be-e3fd4da13193
+            order: 100
+      options:
+        showPagination: false
