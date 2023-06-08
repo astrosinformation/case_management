@@ -1,0 +1,55 @@
+metadata:
+  key: comment-message
+  template: false
+  name: "!Comment Message"
+  knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+  knowledgeObjectId: CASECOMMENT
+  profileView: true
+layout:
+  rows:
+    - id: row_e15d9fcb-9f29-43f1-90ce-89c254451e4b
+      columns:
+        - id: column_334fd256-8936-406f-81b7-444979d5fea4
+          componentId: text-box-50b894a1-5a19-48eb-b069-039dc0d3cdf1
+          size: "1"
+          type: default
+          order: 100
+      order: 100
+    - id: row_629bcd94-5d81-49cb-a086-ff31456fb823
+      columns:
+        - id: column_68f78844-ea81-4b90-a447-a5dc5bd43e17
+          componentId: text-box-48846afd-b367-4c6e-9997-058cb1b852df
+          size: "1"
+          type: default
+          order: 100
+      order: 200
+    - id: row_6d51ea78-3846-43cd-b8a8-6879887f21e2
+      columns:
+        - id: column_48807a53-98f6-470f-a665-6f88b7fa8d83
+          componentId: text-box-5f7c05e6-4029-49b7-8806-eae5c04b594a
+          size: "1"
+          type: default
+          order: 100
+      order: 300
+components:
+  - id: text-box-50b894a1-5a19-48eb-b069-039dc0d3cdf1
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASECOMMENT.CREATEDDATE
+      title: "Created Date:"
+      content: "{0}"
+  - id: text-box-48846afd-b367-4c6e-9997-058cb1b852df
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASECOMMENT.COMMENTBODY
+      title: Comment
+      content: "{0}"
+  - id: text-box-5f7c05e6-4029-49b7-8806-eae5c04b594a
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASECOMMENT.ISDELETED
+      title: ""
+      content: "{0}"
