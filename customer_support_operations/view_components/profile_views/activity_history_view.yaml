@@ -1,0 +1,26 @@
+metadata:
+  key: activity-history-view
+  template: false
+  name: "!Activity History View"
+  knowledgeModelKey: salesforce-activity-data-explorer-3_knowlegdeModel_1685770540179
+  knowledgeObjectId: CASE
+  profileView: true
+variables:
+  - name: id
+    type: string
+layout:
+  rows:
+    - id: row_3586e2ef-8b59-40c7-94fb-5386b1d080b0
+      columns:
+        - id: column_9fa8e60b-1128-4632-846d-4659653bd3c3
+          componentId: activity-history
+          size: "1"
+          order: 100
+      order: 100
+components:
+  - id: activity-history
+    type: activity-history
+    settings:
+      knowledgeModelKey: salesforce-activity-data-explorer-3_knowlegdeModel_1685770540179
+      recordMetadataId: CASE
+      objectId: ${id}
