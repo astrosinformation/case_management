@@ -1,0 +1,440 @@
+metadata:
+  key: customer-satisfaction
+  template: false
+  name: "!Customer Satisfaction"
+  knowledgeModelKey: salesforce-activity-data-explorer-3_knowlegdeModel_1685770540179
+variables:
+  - id: 32721e19-4750-44bd-a15e-65812b66e53d
+    name: currentDimension_1
+layout:
+  rows:
+    - id: row_59f2cc02-e28a-4405-be94-dcec13daaeb7
+      columns:
+        - id: column_b2013b99-a4bf-4ff1-838b-9235e1564849
+          componentId: dropdown-list-f3275cde-488a-4422-81ce-37d05faca03c
+          size: "1"
+          type: default
+          order: 100
+        - id: column_7fee2c2f-de08-4de8-9a5a-171302a82fc3
+          componentId: global-search-aac197de-6a78-4ab2-8850-98073d694abe
+          size: "1"
+          type: default
+          order: 200
+        - id: column_e08ddad0-cc34-4069-ad06-aeb53a623c93
+          componentId: time-filter-2685ca14-011c-4ad1-af90-649aa85108ea
+          size: "1"
+          type: default
+          order: 300
+      order: 50
+    - id: row_956f7c3e-eb6f-40bf-a2e3-76f95c80c499
+      growHeight: true
+      removePadding: false
+      columns:
+        - id: column_4cb7fdbd-2fba-4bc3-9151-9e876bf5493f
+          layout:
+            rows:
+              - id: row_e4535479-bed1-4fc3-a540-3042dd441719
+                growHeight: true
+                columns:
+                  - id: column_e354e1c8-553d-4182-a1ef-c82cbc8c2dac
+                    componentId: process-explorer-d172ac49-6ecd-40d7-b82c-c7ab617e1e2d
+                    size: "1"
+                    type: panel
+                    order: 0
+                order: 100
+          size: "1"
+          type: ""
+          height: ""
+          order: 100
+        - id: column_cc7839f2-c3f8-4b84-bd66-6d09cce5f333
+          layout:
+            rows:
+              - id: row_e73777ef-24f4-48b2-bea7-f5763e2f7e22
+                columns:
+                  - id: column_489414d6-cbc7-4d6e-b21e-651c02ac1078
+                    componentId: text-box-29899693-f562-488a-9a96-b58c36dc4ff3
+                    size: "1"
+                    type: panel
+                    order: 0
+                  - id: column_3e712589-957a-4f12-8c0d-4aeceb0ae099
+                    componentId: text-box-f9cf0232-1eb9-422d-a332-5a395e335f47
+                    size: "1"
+                    type: panel
+                    order: 100
+                  - id: column_7cdbe325-ba2b-46f6-9a74-324d7e34d5b1
+                    componentId: text-box-9390dae0-4115-46c8-bb23-004b6ac5bba0
+                    size: "1"
+                    type: panel
+                    order: 200
+                  - id: column_be432902-d63d-41c5-9cea-cee586a29e34
+                    componentId: text-box-2261c977-2b12-4334-b9a8-9e7a99f57319
+                    size: "1"
+                    type: panel
+                    order: 300
+                order: 100
+              - id: row_4594a424-1ae9-4828-bd8b-655d9d35dfa3
+                columns:
+                  - id: column_1e5e3df0-d2fc-420a-828d-23f493f52049
+                    componentId: kpi-list-de055d14-5cfe-40b4-99ce-ca332cc10b6e
+                    size: "1"
+                    type: panel
+                    order: 0
+                order: 200
+              - id: row_1afb50c4-de33-4ba9-b703-2eb77fcdc138
+                columns:
+                  - id: column_c46469b2-003a-4fa2-ace4-177f7e39a2eb
+                    componentId: execution-gap-list-1431e24c-d693-4838-b1f3-96f42e650a67
+                    size: "1"
+                    type: panel
+                    order: 0
+                order: 300
+              - id: row_96623ccd-eb55-420c-8d94-32a460ad1e83
+                columns:
+                  - id: column_9c084d3a-0814-43f3-946c-5bb2cbe70e00
+                    componentId: button-list-9793c317-0cbb-42cf-8328-cc10b541425f
+                    size: "1"
+                    order: 0
+                order: 350
+              - id: row_55353eea-6c20-41b0-b25a-1820101018e8
+                columns:
+                  - id: column_bf496a33-6335-46f7-89c3-bc783ab6e0ce
+                    componentId: button-list-6b17563a-5db2-4a11-bef0-ab6010113f42
+                    size: "1"
+                    order: 0
+                order: 375
+              - id: row_eb86769f-e0ab-43cd-9045-e587cde3437e
+                growHeight: true
+                columns:
+                  - id: column_2f7699fa-d612-44dd-a48c-2e09736da8e6
+                    componentId: view-ca0c7c20-20ba-461a-9b62-e027fcbf41c3
+                    size: "1"
+                    type: panel
+                    order: 0
+                order: 400
+          size: "1"
+          order: 150
+      order: 100
+components:
+  - id: process-explorer-d172ac49-6ecd-40d7-b82c-c7ab617e1e2d
+    type: process-explorer
+    settings:
+      name: Customer Service
+      eventLogs:
+        - attribute: CEL_SF_CASE_ACTIVITIES.ACTIVITY_EN
+  - id: kpi-list-6aa5df77-747e-4d17-be22-16c2cd05fe16
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: escalation_rate
+            id: f1f6dde1-2d8e-451d-bb72-788cec3a1120
+            order: 100
+            show: true
+  - id: root-cause-list-fe745575-253f-4d30-a0de-0c08d890d4ec
+    type: root-cause-list
+    settings: null
+  - id: table-51e10511-797d-4641-9ded-58b356c05901
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASE.CAUSE_CODE__C
+            id: c50da6d9-f6fa-4dbf-b86c-c345d6207304
+            order: 100
+          - field: COUNT_TABLE__CASE
+            id: 51a771f6-677b-4ae4-9504-c245926e73ec
+            order: 200
+      options:
+        allowInvisibleColumns: false
+      name: Detail by Calling Reason
+  - id: dropdown-list-2f57f447-f632-4efc-bd49-9803fcc9cc71
+    type: dropdown-list
+    settings:
+      data:
+        columns:
+          - attribute: CASE.SERVICE__C
+            id: 9bb8263d-340f-4c91-92c9-a828fde112c5
+            order: 100
+          - attribute: CASE.CAUSE_CODE__C
+            id: ea3136e8-b5ca-4f8d-a97e-c768879696f8
+            order: 200
+  - id: execution-gap-list-1431e24c-d693-4838-b1f3-96f42e650a67
+    type: execution-gap-list
+    settings:
+      sortBy:
+        defaultColumn: impact
+        direction: DESC
+      kpi: COUNT_TABLE__CASE
+      name: Top Inefficiencies
+      tableView: true
+      forwardFilterToProfileView: false
+      infoText:
+        title: Execution Gaps
+        content: This table lists the execution gaps with the biggest impact on customer
+          satisfaction. Closing these gaps will improve the business outcomes
+          and the overall process.
+      columns:
+        issue:
+          title: Category
+          hide: false
+        impact:
+          hide: false
+        kpi:
+          hide: false
+        occurrences:
+          hide: true
+  - id: kpi-list-de055d14-5cfe-40b4-99ce-ca332cc10b6e
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: multihop_rate
+            id: 13562a11-29fd-4290-8372-70c4457c7e87
+            order: 100
+            show: true
+          - kpi: time_to_first_qualified_response
+            id: 0bd1eefb-23b1-4e70-ab52-d58699bf378f
+            order: 200
+            show: true
+          - kpi: escalation_rate
+            show: true
+            id: 999e7551-2982-43cc-9800-09ceda1d0c72
+            order: 300
+  - id: text-box-29899693-f562-488a-9a96-b58c36dc4ff3
+    type: text-box
+    settings:
+      placeholders:
+        - field: slo_breach_rate
+      title: ""
+      content: <p > <center><h3> SLA Breach Rate</h3> <br><span class='bold'><h1><font
+        color="FE4C57">{0} ↗</font></h1></span></center> </p>
+  - id: text-box-2261c977-2b12-4334-b9a8-9e7a99f57319
+    type: text-box
+    settings:
+      title: ""
+      content: <p> <center><h3> Potential Impact </h3> <br><span
+        class='bold'><h1>{0}</h1></span></center> </p>
+      placeholders:
+        - field: slo_breach_impact
+  - id: text-box-f9cf0232-1eb9-422d-a332-5a395e335f47
+    type: text-box
+    settings:
+      placeholders:
+        - field: TOTAL_THROUGHPUT_TIME_IN_DAYS__CEL_SF_CASE_ACTIVITIES__EVENTTIME
+      title: ""
+      content: <p> <center><h3>Average Resolution Time</h3> <br><span
+        class='bold'><h1>{0}</h1></span></center> </p>
+  - id: text-box-9390dae0-4115-46c8-bb23-004b6ac5bba0
+    type: text-box
+    settings:
+      title: ""
+      content: <p> <center><h3> Number of Tickets</h3> <br><span
+        class='bold'><h1>{0}</h1></span></center> </p>
+      placeholders:
+        - field: COUNT_TABLE__CASE
+  - id: table-098d8beb-cee1-4ddf-9684-e453be05a1a9
+    type: table
+    settings:
+      data: {}
+  - id: dropdown-list-24c33815-0247-452b-8ac4-eba06b8bd3c0
+    type: dropdown-list
+    settings:
+      floatingPlaceholder: true
+      styles:
+        overflow: line-break
+        position:
+          horizontal: center
+          vertical: center
+      data:
+        columns:
+          - attribute: CASE.SERVICE__C
+            id: 100
+            order: 100
+            displayName: Dimension
+            selected: ClientGroup
+            onClick:
+              update:
+                variables:
+                  - name: currentDimension_1
+  - id: table-18d49db0-14de-4e38-ae3e-d7015cd5e3bd
+    type: table
+    settings:
+      name: " "
+      options:
+        hideEmptyRows: false
+        selectable: false
+        preventLineBreak: false
+        dense: false
+        autoAlignment: true
+      data:
+        columns:
+          - field: SLO_CALCULATIONS.SERVICE__C
+            id: Material
+            order: 100
+          - field: slo_breach_impact
+            id: Deliver Date Change Impact
+            order: 200
+        distinct: true
+        sortBy:
+          - field: slo_breach_impact
+            direction: DESC
+            id: 0718fcf6-58cd-4f1c-8e16-b7162ff46a58
+            order: 100
+  - id: dropdown-list-839d2f52-c7f1-4727-b2e2-84f9946e720d
+    type: dropdown-list
+    settings:
+      floatingPlaceholder: true
+      styles:
+        overflow: line-break
+        position:
+          horizontal: center
+          vertical: center
+      data:
+        columns:
+          - attribute: CASE.SERVICE__C
+            id: 100
+            order: 100
+            displayName: Dimension
+            selected: Support Level
+            onClick:
+              update:
+                variables:
+                  - name: currentDimension_1
+  - id: table-f97396e5-bdab-4ddb-b0fa-568e85cda71e
+    type: table
+    settings:
+      name: " "
+      options:
+        hideEmptyRows: false
+        selectable: false
+        preventLineBreak: false
+        dense: false
+        autoAlignment: true
+      data:
+        columns:
+          - field: SLO_CALCULATIONS.SERVICE__C
+            id: 90053f11-45c9-4715-96c4-f95b834064a9
+            order: 100
+          - field: time_to_first_qualified_response
+            id: Deliver Date Change Impact
+            order: 200
+          - field: slo_breach_rate
+            id: 9fc78524-5ac6-4c15-9750-766d97a55b9e
+            order: 300
+          - field: cost_per_breach
+            id: d1da7852-96bc-4168-a5cf-ac2296c600cc
+            order: 400
+          - field: slo_breach_duration
+            id: af94d2bc-de8c-434e-933a-ef0003bdb06f
+            order: 500
+        distinct: true
+        sortBy:
+          - field: time_to_first_qualified_response
+            direction: DESC
+            id: 32e0eefe-27ce-44aa-9896-ced0c2c20060
+            order: 100
+  - id: text-box-e964326c-ed61-47fb-a527-1d509f70925e
+    type: text-box
+    settings:
+      title: Drilldown by ${currentDimension_1}
+      content: ""
+  - id: view-ca0c7c20-20ba-461a-9b62-e027fcbf41c3
+    type: view
+    settings:
+      key: prioritization-and-sla-adherence
+      allowHeader: false
+      allowFilters: false
+      shareFilters: false
+      shareSelections: false
+  - id: process-explorer-04788ff3-3a34-4969-bc9f-5869084cf053
+    type: process-explorer
+    settings:
+      eventLogs:
+        - eventLog: EL_CEL_SF_CASE_ACTIVITIES__ACTIVITY_EN
+          id: 0862259e-f46a-4016-8be1-c6c0536b5b40
+          order: 100
+      transitions: false
+      graphControls: panel
+  - id: button-list-9793c317-0cbb-42cf-8328-cc10b541425f
+    type: button-list
+    settings:
+      buttons:
+        - label: Customer Touchpoints
+          id: 02069189-1d23-4338-bc5f-96bd1307afc9
+          order: 100
+          variant: primary
+          onClick:
+            openView:
+              viewKey: customers-touchpoints
+              openInSideOverlay: false
+              syncFilters: forward-only
+        - label: Prioritization and SLO Adherence
+          id: 78c8fd18-4a7f-4577-b0eb-fef2da635481
+          order: 200
+          onClick:
+            openView:
+              viewKey: prioritization-and-sla-adherence
+              openInSideOverlay: false
+              syncFilters: forward-only
+          variant: primary
+        - label: Multi-Hop Tickets
+          id: 50777925-7d09-4ab0-b36f-676db544c7b9
+          order: 300
+          variant: primary
+          onClick:
+            openView:
+              viewKey: multi-hop-tickets
+              openInSideOverlay: false
+              syncFilters: forward-only
+  - id: button-list-6b17563a-5db2-4a11-bef0-ab6010113f42
+    type: button-list
+    settings:
+      buttons:
+        - label: Unresolved Cases
+          id: b26a6e1c-a652-4d06-96a5-9cccad3c4ecc
+          order: 100
+          variant: primary
+          onClick:
+            openView:
+              viewKey: dd-unresolved-cases
+              openInSideOverlay: false
+              syncFilters: forward-only
+        - label: Problem-Incident Mapping
+          id: 5b5fca28-93a1-4776-b9c5-81f79a0b22d7
+          order: 200
+          onClick:
+            openView:
+              viewKey: dd-problem-incident-mapping
+              openInSideOverlay: false
+              syncFilters: forward-only
+          variant: primary
+        - label: Duplicate Tickets
+          id: ab8e26de-7f4f-40e1-a620-46d962e65ec4
+          order: 300
+          onClick:
+            openView:
+              viewKey: dd-duplicate-tickets
+              openInSideOverlay: false
+              syncFilters: forward-only
+          variant: primary
+  - id: dropdown-list-f3275cde-488a-4422-81ce-37d05faca03c
+    type: dropdown-list
+    settings:
+      data:
+        columns:
+          - attribute: CASE.OWNER_FULL_NAME__C
+            id: aade6f56-86ae-4263-b005-96466d4861d3
+            order: 100
+            displayName: Filter By Owner
+      name: Filter Case Owner
+  - id: global-search-aac197de-6a78-4ab2-8850-98073d694abe
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.CASENUMBER
+      name: Search Case NO.
+  - id: time-filter-2685ca14-011c-4ad1-af90-649aa85108ea
+    type: time-filter
+    settings:
+      dateAttribute: CASE.CREATEDDATE
+      name: Filter by Date
