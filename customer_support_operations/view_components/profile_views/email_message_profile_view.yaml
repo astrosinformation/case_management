@@ -1,0 +1,77 @@
+metadata:
+  key: email-message-profile-view
+  template: false
+  name: "!Email Message Profile View"
+  knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+  knowledgeObjectId: EMAILMESSAGE
+  profileView: true
+layout:
+  rows:
+    - id: row_903a6b3f-3d75-4487-9853-0dd3e11aacbf
+      columns:
+        - id: column_cdbe663d-0fea-457d-b7b5-123becb3dc23
+          componentId: text-box-ef9a3915-221b-4853-8e24-58741c7c59bd
+          size: "1"
+          type: default
+          order: 100
+      order: 100
+    - id: row_677037d8-380b-4797-a8e6-953b69e70782
+      columns:
+        - id: column_b24f7126-13bd-456b-818f-adc3136be8f3
+          componentId: text-box-12163003-2cd6-4ae0-8387-04bd871fc060
+          size: "1"
+          type: default
+          order: 100
+      order: 200
+    - id: row_0144dfdb-9db4-4d8e-bb25-f4e296ec441d
+      columns:
+        - id: column_056e3f36-cf8c-4968-a535-c585f8fab4b0
+          componentId: text-box-38d15c88-06f9-4402-9079-49f734ecf867
+          size: "1"
+          type: default
+          order: 100
+      order: 300
+    - id: row_19d35b9a-8163-4b6b-a086-cab478799dff
+      columns:
+        - id: column_fb831cea-4318-4481-aaf9-ac12c8934cc0
+          componentId: text-box-4d78b3eb-682b-4938-aa98-df0de1be89b9
+          size: "1"
+          type: default
+          order: 100
+      order: 300100
+components:
+  - id: text-box-fa39788c-9ed8-4b2b-83d0-ac145c68b6e9
+    type: text-box
+    settings:
+      placeholders:
+        - field: EMAILMESSAGE.HTMLBODY
+      title: "Email Message:"
+      content: "{0}"
+  - id: text-box-12163003-2cd6-4ae0-8387-04bd871fc060
+    type: text-box
+    settings:
+      placeholders:
+        - field: EMAILMESSAGE.HTMLBODY
+      title: Full Email
+      content: "{0}"
+  - id: text-box-38d15c88-06f9-4402-9079-49f734ecf867
+    type: text-box
+    settings:
+      placeholders:
+        - field: EMAILMESSAGE.CREATEDDATE
+      title: "Email Timestamp:"
+      content: "{0}"
+  - id: text-box-ef9a3915-221b-4853-8e24-58741c7c59bd
+    type: text-box
+    settings:
+      placeholders:
+        - field: EMAILMESSAGE.SUBJECT
+      title: "Subject:"
+      content: "{0}"
+  - id: text-box-4d78b3eb-682b-4938-aa98-df0de1be89b9
+    type: text-box
+    settings:
+      placeholders:
+        - field: EMAILMESSAGE.TEXTBODY
+      title: "Email Content Text View:"
+      content: "{0}"
