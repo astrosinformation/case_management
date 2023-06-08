@@ -1,0 +1,355 @@
+metadata:
+  key: customers-touchpoints
+  template: false
+  name: Customers Touchpoints
+  knowledgeModelKey: -salesforce-activity-data-model-copy
+  knowledgeObjectId: CASE
+  profileView: true
+variables:
+  - id: f5276602-43a3-4228-9bef-a391f34e291d
+    name: currentDimension_1
+    defaultValue: ClientGroup
+    type: STRING
+layout:
+  rows:
+    - id: row_858f2cb9-8702-4aaa-913c-b5b015cc7a67
+      growHeight: true
+      columns:
+        - id: tab-d9431aa2-d942-4588-9550-b0d2e748fbcd
+          layout:
+            rows:
+              - id: row_5e23c893-18d9-415b-8e8b-8836ccafee79
+                columns:
+                  - id: column_d84e10ee-41e0-46a7-8cbb-b86090c4eab1
+                    layout:
+                      rows:
+                        - id: row_c4226c3c-514c-48ac-a5c5-7b4c1cdbe8fe
+                          growHeight: true
+                          removePadding: false
+                          columns:
+                            - id: column_b0355094-0afa-4d0c-8626-4e707390cab6
+                              layout:
+                                rows:
+                                  - id: test_row_4
+                                    removePadding: false
+                                    columns:
+                                      - id: test_column
+                                        componentId: text-box-75f9c4b8-79a2-4ec9-9d4a-b88c1f8fcbcf
+                                        size: "1"
+                                        type: panel
+                                        order: 100
+                                    height: ""
+                                    order: 100
+                                  - id: row_be144b84-b7a1-40cb-9328-0c9f2d43676a
+                                    removePadding: true
+                                    columns:
+                                      - id: column_e3d67ac8-64ba-4154-b9ba-aacad186c983
+                                        componentId: kpi-list-e3a9cac5-b9c4-47ed-a427-b01e24b4186f
+                                        size: "1"
+                                        type: panel
+                                        order: 100
+                                    order: 200
+                                  - id: row_071a9833-fc9f-4be4-b025-7aaf13d68c14
+                                    columns:
+                                      - id: column_5467822b-fdb6-45cc-8544-51864f93f2f6
+                                        componentId: text-box-ec0d101b-f91e-45df-b873-d1e264b90d61
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                      - id: column_cebf31c0-54ef-4728-b78f-9bdadf131df9
+                                        componentId: text-box-ec0d101b-f91e-45df-b873-d1e264b90d61
+                                        size: "2"
+                                        order: 200
+                                      - id: column_67e36783-233a-47a2-9e38-b4ad6ffd9c65
+                                        componentId: dropdown-list-a27b037f-4b18-40e6-b57e-bd058409e7f6
+                                        size: "1"
+                                        order: 300
+                                    order: 250
+                                  - id: row_75d588f2-5477-40d7-8e7a-b21620d8bdc4
+                                    growHeight: true
+                                    removePadding: false
+                                    columns:
+                                      - id: column_ad826bb1-0bff-4c07-98dd-4dab83a5cac2
+                                        componentId: bar_chart
+                                        size: "1"
+                                        type: panel
+                                        height: ""
+                                        order: 100
+                                    order: 300
+                              size: "1"
+                              type: panel
+                              order: 100
+                            - id: column_8ecd99f0-f527-4dcd-91a8-e8bd23960cd0
+                              layout:
+                                rows:
+                                  - id: test_row_3
+                                    growHeight: false
+                                    removePadding: false
+                                    columns:
+                                      - id: some_id
+                                        componentId: text-box-ed8869a5-4c37-46aa-b99b-f3d8097efe03
+                                        size: "1"
+                                        type: panel
+                                        order: 200
+                                    order: 200
+                                  - id: row_9bbf2dfc-6e58-4cc2-8be7-fded3746f58f
+                                    growHeight: true
+                                    columns:
+                                      - id: 8b4c84e1-dac2-42b7-a014-a7cab3a808e1
+                                        tabs:
+                                          - id: tab-da1ace95-bd8f-4939-b6fe-95a23bc43867
+                                            layout:
+                                              rows:
+                                                - id: row_460fb0be-6879-41fb-bbbd-948cb1a02ac8
+                                                  growHeight: false
+                                                  columns:
+                                                    - id: column_d049d016-274b-4580-b390-8a4d9903ee55
+                                                      componentId: Root_Cause_Table
+                                                      size: "1"
+                                                      order: 100
+                                                  height: ""
+                                                  order: 100
+                                            label: Touchpoints per client
+                                            order: 100
+                                          - id: tab-9d7b500b-7a8b-45e6-a0e6-2a937e06b5e8
+                                            layout:
+                                              rows:
+                                                - id: row_f8b3a614-5670-416c-8bfa-fe954badeab4
+                                                  columns:
+                                                    - id: column_408d03e7-e995-4b97-92a6-3b55d592e771
+                                                      layout:
+                                                        rows:
+                                                          - id: row_50e37887-9bca-429f-b988-6a4e2c773bdb
+                                                            columns:
+                                                              - id: column_37f4cd98-94b5-4423-9bad-2b5b99ead75a
+                                                                componentId: ""
+                                                                size: "1"
+                                                                order: 100
+                                                            order: 100
+                                                          - id: row_2ac5a91c-1749-4248-9668-3abc3b12957c
+                                                            removePadding: false
+                                                            columns:
+                                                              - id: column_f28d1fe6-1189-4307-974d-3de8b346bb0b
+                                                                componentId: text-box-60c1de5b-2a01-41d3-9807-dc01cf31307e
+                                                                size: "1"
+                                                                type: panel
+                                                                order: 100
+                                                            order: 200
+                                                      size: "1"
+                                                      order: 50
+                                                    - id: column_ec07fc50-5f08-47c5-89cc-6a796f392330
+                                                      componentId: dropdown-list-a27b037f-4b18-40e6-b57e-bd058409e7f6
+                                                      size: "0.3"
+                                                      type: default
+                                                      order: 100
+                                                  order: 50
+                                                - id: row_a0aabe35-a1ee-4c90-b4ec-7100ac8dcc1e
+                                                  growHeight: true
+                                                  columns:
+                                                    - id: column_1b4c3576-e43e-4fb2-8308-552475c2bfa9
+                                                      componentId: table-d92bed86-06f2-4ce5-91ec-a5039d757085
+                                                      size: "1"
+                                                      order: 100
+                                                  order: 100
+                                            label: General Drilldown
+                                            order: 200
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                    order: 300
+                                  - id: row_e8145d79-9302-4b94-a0a5-e7eaf055e6d9
+                                    columns:
+                                      - id: column_cc186799-b684-4d12-b3fd-487e340b3ae5
+                                        componentId: button-list-66c0adaa-8ad0-4e20-a924-c675d8370667
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                    order: 400
+                              size: "1"
+                              type: panel
+                              order: 200
+                          order: 28
+                    size: "1"
+                    order: 100
+                order: 100
+          size: "1.1"
+          order: 50
+      order: 14
+components:
+  - id: Root_Cause_Table
+    type: table
+    settings:
+      name: " "
+      options:
+        hideEmptyRows: false
+        selectable: false
+        autoAlignment: true
+        autoShrink: true
+      data:
+        columns:
+          - field: TOUCHPOINTS_AGGREGATED.CASEID
+            id: f1817ddd-8a9c-48ba-a935-67ed6eec3767
+            order: 100
+          - field: number_of_touchpoints
+            id: 0753d435-e8dc-4b2a-b69b-7a54ae73d096
+            order: 200
+          - field: impact_of_unnecessary_touchpoints
+            id: e1489dc3-57f2-4497-b02d-95e044243a8f
+            order: 300
+          - field: TOUCHPOINTS_AGGREGATED.SOURCE
+            id: 3ba33a11-ab5d-48f9-ac81-20ee9a2218f3
+            order: 400
+        distinct: true
+        sortBy:
+          - field: impact_of_unnecessary_touchpoints
+            direction: DESC
+            id: f648fd83-8309-4dbd-939c-75897267656f
+            order: 100
+  - id: text-box-75f9c4b8-79a2-4ec9-9d4a-b88c1f8fcbcf
+    type: text-box
+    settings:
+      name: Impact of Unnecessary Customer Touchpoints
+      content: <p align='justify'> Additional unnecessary customer touchpoints
+        <b>increase the probability of churn</b> of our clients and result in a
+        lower customer lifetime value in the long-term.</p>
+      infoText:
+        title: Impact of Frequent Delivery Date Changes
+        content: Celonis visualizes the impact of the execution gap in detail. <br><br>
+          <b>METRIC NAME</b><br>METRIC DESCRIPTION.<br><br><b>METRIC
+          NAME</b><br>METRIC DESCRIPTION.<br><br><b>Realization
+          Potential</b><br>DESCRIPTION. The number is based on benchmarks of
+          existing Celonis customers and validated by their
+          success.<br><br><b>Impact</b><br>The resulting possible savings that
+          can be realized when introducing Celonis to close this specific
+          execution gap.
+      title: ""
+  - id: text-box-ed8869a5-4c37-46aa-b99b-f3d8097efe03
+    type: text-box
+    settings:
+      name: Root Cause Detection
+      content: <p align='justify'><b>Customers are not proactively notified</b> about
+        the status of their tickets and thus follow up repeatedly.</p>
+      infoText:
+        title: Root Cause
+        content: Celonis helps not only to analyze the execution gap and its impact but
+          also to identify the actual root cause causing the execution
+          gap.<br><br> <b>ROOT CAUSE TITLE</b><br>ROOT CAUSE
+          DESCRIPTION.<br><br><b>ROOT CAUSE TITLE</b><br>ROOT CAUSE DESCRIPTION.
+      title: ""
+  - id: kpi-list-e3a9cac5-b9c4-47ed-a427-b01e24b4186f
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: impact_of_unnecessary_touchpoints
+            id: af7006a8-ed21-40b3-9c27-072d27186d5e
+            order: 100
+            show: true
+          - kpi: cost_per_unresolved_ticket
+            id: 9dfc6ace-6dea-4675-907d-24bfae756e6b
+            order: 200
+            show: true
+          - kpi: realization_potential
+            id: 31ab0a86-b5b9-42b4-9501-f6fcb048e076
+            order: 300
+            show: true
+      options:
+        showTarget: false
+        showSettings: false
+        showBenchmark: true
+        showPriority: true
+        size: sm
+      styles:
+        overflow: full-width
+        position:
+          horizontal: full
+          vertical: bottom
+  - id: table-d92bed86-06f2-4ce5-91ec-a5039d757085
+    type: table
+    settings:
+      name: " "
+      options:
+        hideEmptyRows: false
+        selectable: false
+        preventLineBreak: false
+        dense: false
+        autoAlignment: true
+      data:
+        columns:
+          - field: TOUCHPOINTS_AGGREGATED.CASEID
+            id: 6df40c12-5fc2-459a-b3c1-8270e2d86266
+            order: 100
+          - field: impact_of_unnecessary_touchpoints
+            id: Deliver Date Change Impact
+            order: 200
+        distinct: true
+        sortBy:
+          - field: impact_of_unnecessary_touchpoints
+            direction: DESC
+            id: 0718fcf6-58cd-4f1c-8e16-b7162ff46a58
+            order: 100
+  - id: dropdown-list-a27b037f-4b18-40e6-b57e-bd058409e7f6
+    type: dropdown-list
+    settings:
+      floatingPlaceholder: true
+      styles:
+        overflow: line-break
+        position:
+          horizontal: center
+          vertical: center
+      data:
+        columns:
+          - attribute: CASE.SERVICE__C
+            id: 100
+            order: 100
+            displayName: Dimension
+            selected: ClientGroup
+            onClick:
+              update:
+                variables:
+                  - name: currentDimension_1
+  - id: text-box-60c1de5b-2a01-41d3-9807-dc01cf31307e
+    type: text-box
+    settings:
+      title: Drilldown by ${currentDimension_1}
+      content: ""
+  - id: button-list-66c0adaa-8ad0-4e20-a924-c675d8370667
+    type: button-list
+    settings:
+      buttons:
+        - label: Set up Action Flow
+          icon: board-charts
+          variant: primary
+          order: 100
+          id: fee30f76-78a2-4628-8fee-379838c2e817
+          onClick:
+            navigateTo:
+              url: package-manager/ui/by-keys?packageKey=it-service-mgmt-ems&assetKey=customer-touchpoint-follow-up&views=true
+              openInNewTab: true
+              placeholders: []
+  - id: bar_chart
+    type: chart
+    settings:
+      encodings:
+        x:
+          field: TOUCHPOINTS_AGGREGATED.CASEID
+        y:
+          field: impact_of_unnecessary_touchpoints
+      visuals:
+        - mark:
+            type: bar
+            bandwidth: 0
+          encodings:
+            y:
+              stack:
+                - impact_of_unnecessary_touchpoints
+              format: $.2s
+          id: 77325a86-ceca-4915-9fde-2d7e975c8a8f
+          order: 100
+      limit: 500
+      sortBy: []
+  - id: text-box-ec0d101b-f91e-45df-b873-d1e264b90d61
+    type: text-box
+    settings:
+      title: ""
+      content: " "
