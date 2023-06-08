@@ -1,0 +1,821 @@
+metadata:
+  key: sev-1-profile-view
+  template: false
+  name: "!Sev 1 Profile View"
+  knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+  knowledgeObjectId: sev_1_case_record
+  profileView: true
+layout:
+  rows:
+    - id: row_ea9d06d9-b442-4384-a506-24902d2d6458
+      columns:
+        - id: column_90cc79da-37b1-4846-be96-a4591d00b882
+          componentId: attribute-list-e284fb0b-799d-4888-9fee-e4e43e26b294
+          size: "1"
+          type: default
+          order: 100
+      order: 100
+    - id: row_1ab6745f-24fe-476c-b548-c1eceda20199
+      columns:
+        - id: column_9df39849-6b06-4f25-a84a-492882d0f1f6
+          tabs:
+            - id: tab-2318c8b6-85cd-4262-b77b-4dd9a3c2313e
+              layout:
+                rows:
+                  - id: row_aa69d9d8-33d3-4d49-9b2b-19d37cc086d1
+                    columns:
+                      - id: column_5ef8b487-4ba6-4264-aabf-f148b8f8ab4e
+                        componentId: text-box-d3650e0b-d0e2-4ca8-8f96-c5056e09daee
+                        size: "1"
+                        order: 0
+                    order: 100
+              label: Pre Escalation
+              order: 100
+            - id: tab-d2efb130-0ee3-4b5a-862d-4a10172b2550
+              layout:
+                rows:
+                  - id: row_70c15576-0e93-4b66-a81f-2c7e863f2676
+                    columns:
+                      - id: column_f12c81bc-2bc1-45b1-bffb-148ec1e5887b
+                        componentId: text-box-20369589-4aa0-4b75-9d9f-d87acd29fd21
+                        size: "1"
+                        order: 0
+                    order: 100
+                  - id: row_71e7d952-991e-423c-8626-af79ce29d365
+                    columns:
+                      - id: column_f73b7361-088e-4125-a85f-037ea7e6744f
+                        componentId: button-list-87de792c-8974-4b37-91d1-e524dfcf748a
+                        size: "1"
+                        order: 0
+                    order: 200
+                  - id: row_94971481-9fcf-4514-bbe9-2882de3ec37c
+                    columns:
+                      - id: column_9c8e767c-92d1-4884-9b9f-c741d2bc4d1d
+                        componentId: text-box-4a86f677-91fe-4473-99c6-b568bed9362e
+                        size: "1"
+                        order: 0
+                    order: 300
+                  - id: row_5ff92a5b-e7cb-443a-88b8-ef1d9c4d93fc
+                    columns:
+                      - id: column_2202b67a-95e5-4f48-98af-e60b6e7b778e
+                        componentId: text-box-1880c333-23b6-4f12-bdd2-f6e09d2e5219
+                        size: "1"
+                        order: 0
+                    order: 300
+                  - id: row_b5986f92-d336-4f9b-8192-46409e57646a
+                    columns:
+                      - id: column_449e85f8-340c-4fe6-8b09-68c2c49a9693
+                        componentId: text-box-a8f7a905-3bc3-4fb4-80fc-9fbc46202055
+                        size: "1"
+                        order: 0
+                    order: 300
+                  - id: row_609294f5-fad5-4128-a81f-bf58eebe4018
+                    columns:
+                      - id: column_3aee99f2-824f-4097-88e9-4c274636b416
+                        componentId: text-box-67ada82d-4bb8-41e6-a98e-102773004ba4
+                        size: "1"
+                        order: 0
+                    order: 300
+                  - id: row_5772851c-0e64-4bf1-b80d-7c42574008fa
+                    columns:
+                      - id: column_6bb9e79a-d7a7-41eb-a537-04b7c8c27080
+                        componentId: text-box-1a6d0d1a-23d9-4dc4-ada8-4cbf42879e0d
+                        size: "1"
+                        order: 0
+                    order: 301
+                  - id: row_9dda1471-fbc7-4bb9-b2b0-c132e216acae
+                    columns:
+                      - id: column_391c33fe-6cbf-46d1-8b35-65bd720f3730
+                        componentId: text-box-c0ab3b2f-1e21-400d-b80b-bf037d8ead79
+                        size: "1"
+                        order: 0
+                    order: 303
+                  - id: row_d4f4b12e-a08d-441b-82b6-6a0ad246902e
+                    columns:
+                      - id: column_0686f8e3-3906-4b17-b93f-60c62bf7117e
+                        componentId: text-box-83c2401c-6fef-4062-87ab-63ac1a7df84c
+                        size: "1"
+                        order: 0
+                    order: 303
+                  - id: row_96bdddc8-7931-4dfd-ada6-39d5fe21cda1
+                    columns:
+                      - id: column_a4ecd823-dbee-4401-a453-37669a58baf2
+                        componentId: text-box-bd32900b-8881-42e5-9aa5-e86c831851ca
+                        size: "1"
+                        order: 0
+                    order: 304
+                  - id: row_e46635ac-ce31-467d-8725-6aea46c11963
+                    columns:
+                      - id: column_4ce436ee-157e-4598-b601-f7eff7ab9bee
+                        componentId: text-box-22784e60-084c-4f19-8f9d-69cda284ed4d
+                        size: "1"
+                        order: 0
+                    order: 306
+                  - id: row_a5a7eecf-3cce-497c-ac1b-b08e918597ee
+                    columns:
+                      - id: column_377498f4-1492-49bc-aa46-43dc5f847541
+                        componentId: text-box-ac1e66f7-5b59-4d2e-ad01-b5e84f7f85cd
+                        size: "1"
+                        order: 0
+                    order: 312
+                  - id: row_6acfdc29-aaf7-4740-a141-2e2353a8b634
+                    columns:
+                      - id: column_fe916534-d4c6-46b6-a6b6-982c9cd68d77
+                        componentId: text-box-f51d45a4-18d2-4f25-b336-90cc21239be1
+                        size: "1"
+                        order: 0
+                    order: 325
+                  - id: row_b9822681-0e99-47b3-83f9-805c05423bbf
+                    columns:
+                      - id: column_a89cba6a-1058-4e90-8bf9-3ce83d752958
+                        componentId: text-box-aa04bc90-cec8-4fc5-8716-1b7cbcf48dfb
+                        size: "1"
+                        order: 0
+                    order: 350
+                  - id: row_54ba98fc-9111-48f0-9157-56c243ac193e
+                    columns:
+                      - id: column_792f4b59-6961-4856-84a9-15f49a6a08cd
+                        componentId: text-box-2d19c8f1-77a5-4f04-8ab8-9cfe5631941f
+                        size: "1"
+                        order: 0
+                    order: 353
+                  - id: row_eb583de2-5c31-4f2a-bb31-d2c06cddd1e2
+                    columns:
+                      - id: column_e89fc735-bd96-4f6c-a428-877e4706e1e1
+                        componentId: text-box-c5283187-b1b4-457c-90ad-26eb66db6707
+                        size: "1"
+                        order: 0
+                    order: 356
+                  - id: row_730392ca-46bf-47d5-af4e-520d74bbb02a
+                    columns:
+                      - id: column_3f383797-579a-4936-9b43-f33d92121bbb
+                        componentId: text-box-69be129c-7e0d-4502-8a85-0c87caebbb1f
+                        size: "1"
+                        order: 0
+                    order: 362
+                  - id: row_9ecf76ff-a565-4103-8419-a3f2192ec85b
+                    columns:
+                      - id: column_14fb9756-934b-406a-850c-c4028458229f
+                        componentId: text-box-b8f7e065-8770-479e-be91-9117dc259caa
+                        size: "1"
+                        order: 0
+                    order: 375
+                  - id: row_65a469f3-8e47-4cf6-9f97-1fae48ba989f
+                    columns:
+                      - id: column_74808bdd-852f-4ab4-845d-d22fb663e3b8
+                        componentId: text-box-362c5e1e-4606-443f-9027-52122f4f5215
+                        size: "1"
+                        order: 0
+                    order: 387
+                  - id: row_3fb5f37f-f3ec-4bce-b0b6-6272650cb857
+                    columns:
+                      - id: column_e5f81384-b9ea-44a6-ac7e-5475977ad102
+                        componentId: text-box-b1d04da8-76dd-4dce-9e1a-8f2f4d3ac035
+                        size: "1"
+                        order: 0
+                    order: 393
+                  - id: row_8e2832a7-fc62-435d-93f5-21516fd88e3b
+                    columns:
+                      - id: column_6aa208cd-05f6-458c-a766-ef82e7d59efe
+                        componentId: text-box-8afd444d-a42e-470b-bd74-1acea6172b52
+                        size: "1"
+                        order: 0
+                    order: 394
+                  - id: row_d29fbd39-3d9c-4045-b102-267eb276b9eb
+                    columns:
+                      - id: column_7935edec-7f5f-4844-9757-8523f48b3488
+                        componentId: button-list-6227bfa5-cde9-47e2-a253-2c75a28a3c28
+                        size: "1"
+                        order: 0
+                    order: 394
+                  - id: row_d4f72cf1-1a64-4e29-b376-d68c9c0f5c8b
+                    columns:
+                      - id: column_ac7cc4a4-43c9-4c7f-8866-3099ecdf9d68
+                        componentId: text-box-ffa6a576-22b4-4190-8a83-d7fd847dbd25
+                        size: "1"
+                        order: 0
+                    order: 395
+                  - id: row_92af2253-be49-481b-8287-9bdb7e04df11
+                    columns:
+                      - id: column_3e52f072-24a7-4d22-b62d-5c9cbe13a395
+                        componentId: button-list-df201e0e-a07a-4c7e-9323-cbe07014085e
+                        size: "1"
+                        order: 0
+                    order: 396
+                  - id: row_8c00a2bc-987f-457d-a386-410c49dc5c8b
+                    columns:
+                      - id: column_7982661c-5adb-4c24-9d0f-2d547f3372a2
+                        componentId: text-box-a8ad8354-0a29-4aad-b77e-03df750108cf
+                        size: "1"
+                        order: 0
+                    order: 397
+                  - id: row_064b3191-6cc2-4c4e-a28a-3ba6cb26df8c
+                    columns:
+                      - id: column_1f0980ab-9501-46ce-886a-73dd2b46581b
+                        componentId: text-box-cec57a0d-dde8-43bf-ad06-076b18176f50
+                        size: "1"
+                        order: 0
+                    order: 398
+                  - id: row_a4654160-7236-4e83-918a-6613388a5fb7
+                    columns:
+                      - id: column_b217b6b0-ef83-4f1d-bf7a-7daa08cbbe8d
+                        componentId: text-box-c1bacca4-e17c-4b09-80bf-e17995b5dc6b
+                        size: "1"
+                        order: 0
+                    order: 399
+              label: Process Steps
+              order: 200
+            - id: tab-fbdf107b-2f94-49d8-8158-cd111e2de4ce
+              layout:
+                rows:
+                  - id: row_c17e628f-9ae5-46cf-95cd-174fb82ec494
+                    columns:
+                      - id: column_b5319a0a-02b0-4d2f-a116-4f77774d9d02
+                        componentId: text-box-b43108d0-7dde-45bc-a33e-e32c879f4481
+                        size: "1"
+                        order: 0
+                    order: 100
+                  - id: row_f225b066-a78f-4c2e-b66c-833a10458a40
+                    columns:
+                      - id: column_067ad304-b113-426c-b925-5128aa09e41b
+                        componentId: text-box-93bf488c-0776-495c-acb6-d1f3d647954a
+                        size: "1"
+                        order: 0
+                    order: 150
+                  - id: row_53255430-eb9c-4a27-83dd-ce3445a7ba29
+                    columns:
+                      - id: column_22b1b41c-f42d-450c-9f9f-068e356ae5ce
+                        componentId: text-box-228a9d89-574f-41bd-a56f-ebdb77412dd6
+                        size: "1"
+                        order: 0
+                    order: 200
+              label: Post Escalation
+              order: 300
+            - id: tab-9b873676-933e-48e7-8f6e-af57dca0e57b
+              layout:
+                rows:
+                  - id: row_95f9a94d-d5c6-4aba-b2d3-8a005d44bc09
+                    columns:
+                      - id: column_23939367-8b5b-4707-8581-ba473d89e11d
+                        componentId: button-list-0358d652-2c05-49a7-bc90-482beda92957
+                        size: "1"
+                        order: 100
+                    order: 0
+                  - id: row_b697b3c3-fae2-43bd-99ae-3c77699ecad0
+                    growHeight: false
+                    columns:
+                      - id: column_cc51959f-d178-45ab-aef2-db4ac6fa6c2b
+                        componentId: iframe-9b74fcaa-551d-4062-8c63-7942431a18d3
+                        size: "1"
+                        order: 0
+                    height: "1000"
+                    order: 200
+              label: Routing Guides
+              order: 400
+          size: "1"
+          type: default
+          order: 200
+      order: 200
+components:
+  - id: text-box-10e1486f-77e0-48f9-a2ad-47a836ef316c
+    type: text-box
+    settings:
+      placeholders: []
+      title: Let's gooooo!!!!!!!
+      content: ""
+  - id: attribute-list-e284fb0b-799d-4888-9fee-e4e43e26b294
+    type: attribute-list
+    settings:
+      data:
+        - field: CASE.CASENUMBER
+          id: ef8ec395-f14d-43ec-993c-d72dc8511f34
+          order: 100
+        - field: CASE.ISESCALATED
+          id: 5b9c8265-1c81-4d52-86d4-d3150fe8ce91
+          order: 200
+        - field: CASE.PREMIUM_CUSTOMER__C
+          id: 640f008b-6ddc-4e5c-8946-906188432e70
+          order: 300
+        - field: CASE.X2ND_LEVEL__C
+          id: 0fd0c0d7-d4e8-4b09-b535-4a20d8f5a121
+          order: 400
+        - field: CASE.JIRA_KEY__C
+          id: aea51d18-792e-4ae4-9946-d506dd0b3162
+          order: 500
+        - field: CASE.SLACK_GROUP__C
+          id: c7e1107f-c15b-4dc6-a2ac-61804865d6cc
+          order: 600
+        - field: CASE.DATADOG_INCIDENT__C
+          id: 3f52e10a-187e-43cb-9690-15e4f0a573b0
+          order: 700
+        - field: CASE.TEAM_URL__C
+          id: f45ab300-f48a-4221-8670-3a9d65444752
+          order: 800
+        - field: CASE.IS_MASTER_INCIDENT__C
+          id: fc157f91-9829-4eeb-b640-2297c0a8a62b
+          order: 900
+      orientation: horizontal
+      position: null
+  - id: text-box-74621583-fb4e-4a9d-972d-1c08f872c7bc
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: <body><h1 style=text-align:center">Sev 1 Pre-Escalation
+        Steps</h1><br><h2>1) Determine whether the case is a true Critical
+        Customer Incident (CCI) i.e. - Sev 1</h2><br><img
+        src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FCelonis_Workspace%2Fj3sDrvQ_pc.20.44%20PM.png?alt=media&token=730ee257-356b-4078-bbb4-5ef01d8a25b7"><br><h2>2)
+        Understand the timeline for restoring a CCI</h2><br><img
+        src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FCelonis_Workspace%2FFv_vq8tPqO.png?alt=media&token=6b5fddfc-2574-4f5a-bc05-dfe3086e04eb"><br><h2>3)
+        Understand the Sev 1 Process Flow</h2><br><img
+        src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FCelonis_Workspace%2Fus8fYzlJtE.png?alt=media&token=bdd2d6e0-c69a-4a1f-a060-13e78265954b"></body></html>
+  - id: text-box-d3650e0b-d0e2-4ca8-8f96-c5056e09daee
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: <body><h1 style=text-align:center">Sev 1 Pre-Escalation
+        Steps</h1><br><h2>1) Determine whether the case is a true Critical
+        Customer Incident (CCI) i.e. - Sev 1</h2><br><img
+        src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FCelonis_Workspace%2Fj3sDrvQ_pc.20.44%20PM.png?alt=media&token=730ee257-356b-4078-bbb4-5ef01d8a25b7"><br><h2>2)
+        Understand the timeline for restoring a CCI</h2><br><img
+        src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FCelonis_Workspace%2FFv_vq8tPqO.png?alt=media&token=6b5fddfc-2574-4f5a-bc05-dfe3086e04eb"><br><h2>3)
+        Understand the Sev 1 Process Flow</h2><br><img
+        src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FCelonis_Workspace%2Fus8fYzlJtE.png?alt=media&token=bdd2d6e0-c69a-4a1f-a060-13e78265954b"></body></html>
+  - id: text-box-20369589-4aa0-4b75-9d9f-d87acd29fd21
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.ID
+      title: ""
+      content: <body style="font-size:30px"><h1>Step 1</h1><h2>Confirm Case to be true
+        Sev 1</h2><br><p>See the "Pre Escalation" Section for more information
+        on determining whether a case is truly a Sev 1.</p><br><h1>Step
+        2</h1><h2>Raise Jira Ticket</h2></body>
+  - id: button-list-fd1411d2-b4c7-4cdc-98fe-ab8e50821d59
+    type: button-list
+    settings:
+      buttons:
+        - label: new button
+          id: 2837e232-b1b2-4f13-8947-2566f8831d95
+          order: 100
+          variant: link
+          onClick:
+            href: '"https://celonis.lightning.force.com/lightning/r/Case/{0}/view"'
+            openInNewTab: true
+            placeholders:
+              - field: CASE.ID
+  - id: button-list-87de792c-8974-4b37-91d1-e524dfcf748a
+    type: button-list
+    settings:
+      buttons:
+        - label: Raise Jira via Salesforce
+          id: 08e2ef42-ff54-44f0-8f65-b9bbbeb9e9ea
+          order: 100
+          variant: primary
+          onClick:
+            href: '"https://celonis.lightning.force.com/lightning/r/Case/{0}/view"'
+            openInNewTab: true
+            placeholders:
+              - field: CASE.ID
+  - id: text-box-d7b6f60e-a22f-48c7-85da-9f37d1cadbb1
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "<body><h1>Step 3</h1><br><h2>Send Sev1 Escalation Email outside
+        working hours or after 30 minutes</h2><h3>**Important: Do NOT trigger
+        for OnPremise cases!**</h3></body>"
+  - id: button-list-5ed71df1-96a6-4b55-99a9-b551d3c6db52
+    type: button-list
+    settings:
+      buttons:
+        - label: Send Sev 1 Email
+          id: 4dfc5f43-65e9-42e1-85a0-d05c8a8947ea
+          order: 100
+          variant: danger
+          onClick:
+            href: "mailto:severity1@celonis.eu.opsgenie.net?subject=Sev1%20Customer%20Issue\
+              &Body=Issue%20Description:%20%0d%0a%0d%0aScreenshots/Videos:%20%0\
+              d%0a%0d%0aCan%20the%20impairment%20be%20reproduced:%20%0d%0a%0d%0\
+              aRealm:%20%0d%0a%0d%0aTeam%20URLs:%20%0d%0a%0d%0aProduct%20/%20Se\
+              rvice:%20%0d%0a%0d%0aSupport%20ID%20%28please%20provide%20text%29\
+              :%20%0d%0a%0d%0aServicedesk%20ID:%20%0d%0a%0d%0aRequester%20Name:\
+              %20%0d%0a%0d%0aRequester%20Contact%20%28Phone%29:%20%0d%0a%0d%0aA\
+              ny%20deadline:"
+            openInNewTab: true
+  - id: text-box-53c32161-bad5-463e-af14-c732efd10cee
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Issue Description: "
+      name: EMAIL TEMPLATE
+  - id: text-box-01cc2bd6-b947-4980-9aa5-d12f4f7ca598
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Screenshots/Videos:"
+  - id: text-box-52716908-d84b-4246-bea8-4ec56e5d69ae
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Can the impairment be reproduced:"
+  - id: text-box-e681f52b-92bd-4a0f-b204-4a1d0bc18331
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Realm:"
+  - id: text-box-9abfc902-d26b-4db0-80c3-1540ee8629b3
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Team URLs:"
+  - id: text-box-899ded57-e8eb-415c-97d5-45c0aae54c1c
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Product / Service:"
+  - id: text-box-592279dd-db7a-49b8-be7e-2a56fa8553e0
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Support ID (please provide text):"
+  - id: text-box-4856142a-b69e-43d2-8a43-a2789f27084f
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Servicedesk ID:"
+  - id: text-box-a47675dd-885a-4ec6-b293-cf66c0c955f2
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Requester Name:"
+  - id: text-box-ce7a1fef-b1e4-49c0-a494-2b16a957a118
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Requester Contact (Phone):"
+  - id: text-box-72ed4884-031d-4da0-92c3-6fad68f74ed7
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Any deadline:"
+  - id: text-box-28403504-5e1b-4ac3-8537-dfe73db6d37b
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.JIRA_DESCRIPTION__C
+      title: ""
+      content: "{0}"
+  - id: input-box-c9aafa2b-e071-4e3e-84a8-f09f29833bcb
+    type: input-box
+    settings:
+      type: string
+  - id: text-box-7a48a0d7-0609-4249-892b-f3dfa5939d21
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: ""
+  - id: text-box-277f6875-317f-419e-bc19-009865fc55ac
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.TEAM_URL__C
+      title: ""
+      content: "{0}"
+  - id: text-box-26c65bbc-b599-4b72-b993-f984227492c4
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.PRODUCT_AREA__C
+      title: ""
+      content: "{0}"
+  - id: text-box-bf95e4ab-0848-4359-8d04-0de938afb291
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.CLUSTER__C
+      title: ""
+      content: "{0}"
+  - id: text-box-e6d2e2bc-590a-46e4-acdc-a153ca02ad54
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: n/a
+  - id: text-box-2d1a4845-9e4b-44dd-abeb-abdf41ee100f
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.CREATED_BY_FULL_NAME__C
+      title: ""
+      content: "{0}"
+  - id: text-box-b0820259-4eb8-4130-b8be-7ef9deda5e4f
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.CONTACTPHONE
+      title: ""
+      content: "{0}"
+  - id: text-box-f636d7e3-b897-4f81-af20-f5a56835e31c
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: ASAP
+  - id: text-box-ebf2b0fb-5aa1-462c-89a4-fcbf50906a65
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: <body><h1>Step 4<h1><h2>Create temporary Slack Channel</h2></body>
+  - id: button-list-0d804c63-a966-4557-9dbe-a60aab211dcf
+    type: button-list
+    settings:
+      buttons:
+        - label: new button
+          id: c7dcb1f3-a5e2-4359-a528-13d1b2d3cf54
+          order: 100
+          variant: link
+          onClick:
+            executeSkill:
+              skillKey: sev-1-create-slack-channel
+              inputs:
+                - name: Case Number
+                  value: null
+                - name: Customer Name
+                  value: null
+                - name: Case Subject
+                  value: null
+                - name: Slack User ID
+                  value: null
+  - id: iframe-f6e732c2-8c31-47f8-a244-2829866c7c4e
+    type: iframe
+    settings:
+      src: https://customer-support.us-2.celonis.cloud/package-manager/ui/studio/ui/assets/e9ae2c01-df37-4e52-92da-dab1e41f1335#!/documents/e9ae2c01-df37-4e52-92da-dab1e41f1335/view
+      height: 600px
+      width: 100%
+  - id: text-box-4a86f677-91fe-4473-99c6-b568bed9362e
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: '<body><h1>Step 3<h1><h2>Send Sev1 Escalation Email outside working
+        hours or after 30 minutes</h2><h3>**Important: Do not trigger for
+        OnPremise cases!**</h3><br><p>Copy the email template below to be use as
+        the body of your Sev 1 email.</p><br><p>Note: "Screenshots/Video",  "Can
+        the Impairment be reproduced", and "Support ID" all must be filled out
+        manually</p></body>'
+  - id: text-box-1880c333-23b6-4f12-bdd2-f6e09d2e5219
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Issue Description:"
+      name: EMAIL TEMPLATE
+  - id: text-box-a8f7a905-3bc3-4fb4-80fc-9fbc46202055
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.SUBJECT
+        - field: CASE.DESCRIPTION
+        - field: CASE.TICKET_DESCRIPTION__C
+      title: ""
+      content: "{0}<br><br><br>{1}<br><br><br>{2}"
+  - id: text-box-67ada82d-4bb8-41e6-a98e-102773004ba4
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Screenshots/Videos:"
+  - id: text-box-1a6d0d1a-23d9-4dc4-ada8-4cbf42879e0d
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Can the impairment be reproduced:"
+  - id: text-box-c0ab3b2f-1e21-400d-b80b-bf037d8ead79
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: Realm
+  - id: text-box-83c2401c-6fef-4062-87ab-63ac1a7df84c
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Team URLs:"
+  - id: text-box-bd32900b-8881-42e5-9aa5-e86c831851ca
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.TEAM_URL__C
+      title: ""
+      content: "{0}"
+  - id: text-box-22784e60-084c-4f19-8f9d-69cda284ed4d
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Product / Service:"
+  - id: text-box-ac1e66f7-5b59-4d2e-ad01-b5e84f7f85cd
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.PRODUCT_AREA__C
+      title: ""
+      content: "{0}"
+  - id: text-box-f51d45a4-18d2-4f25-b336-90cc21239be1
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Support ID (please provide text):"
+  - id: text-box-aa04bc90-cec8-4fc5-8716-1b7cbcf48dfb
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Servicedesk ID:"
+  - id: text-box-2d19c8f1-77a5-4f04-8ab8-9cfe5631941f
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: N/A
+  - id: text-box-c5283187-b1b4-457c-90ad-26eb66db6707
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Requester Name:"
+  - id: text-box-69be129c-7e0d-4502-8a85-0c87caebbb1f
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.CREATED_BY_FULL_NAME__C
+      title: ""
+      content: "{0}"
+  - id: text-box-b8f7e065-8770-479e-be91-9117dc259caa
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Requester Contact:"
+  - id: text-box-362c5e1e-4606-443f-9027-52122f4f5215
+    type: text-box
+    settings:
+      placeholders:
+        - field: CONTACT.PHONE
+        - field: CASE.CONTACTEMAIL
+      title: ""
+      content: "Phone: {0}<br><br><br>Email: {1}"
+  - id: text-box-b1d04da8-76dd-4dce-9e1a-8f2f4d3ac035
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: "Any deadline:"
+  - id: text-box-87fb31c5-1a23-45ff-aaad-af28081e5ea4
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: ASAP
+  - id: text-box-ffa6a576-22b4-4190-8a83-d7fd847dbd25
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: <body><h1>Step 4:</h1><h2>Create temporary Slack Channel</h2></body>
+  - id: button-list-df201e0e-a07a-4c7e-9323-cbe07014085e
+    type: button-list
+    settings:
+      buttons:
+        - label: Create Temporary Slack Channel
+          id: fb3f1f4e-3d2c-4eb5-91f8-d3bc260ae005
+          order: 100
+          variant: link
+          onClick:
+            executeSkill:
+              skillKey: sev-1-create-slack-channel
+              inputs: []
+  - id: text-box-8afd444d-a42e-470b-bd74-1acea6172b52
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: ASAP
+  - id: text-box-a8ad8354-0a29-4aad-b77e-03df750108cf
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: '<body><h1>Step 5:</h1><h2>If a Datadog incident Slack channel (i.e.
+        #incident-123) was opened, click "Edit Topic" and add "User Liaison:
+        {Your Name} {SF Case Number of Master Incident}" </h2><br><img
+        src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FCelonis_Workspace%2FCkOf2xWQtO.png?alt=media&token=cebd26c3-fcf0-4684-a521-6a1214af2c9b"></body>'
+  - id: button-list-6227bfa5-cde9-47e2-a253-2c75a28a3c28
+    type: button-list
+    settings:
+      buttons:
+        - label: Send Sev 1 Email
+          id: c75a3ef2-585c-460e-8054-dd2f309b563e
+          order: 100
+          variant: danger
+          onClick:
+            href: "mailto:severity1@celonis.eu.opsgenie.net?subject=Sev1%20Customer%20Issue\
+              &Body=Issue%20Description:%20%0d%0a%0d%0aScreenshots/Videos:%20%0\
+              d%0a%0d%0aCan%20the%20impairment%20be%20reproduced:%20%0d%0a%0d%0\
+              aRealm:%20%0d%0a%0d%0aTeam%20URLs:%20%0d%0a%0d%0aProduct%20/%20Se\
+              rvice:%20%0d%0a%0d%0aSupport%20ID%20%28please%20provide%20text%29\
+              :%20%0d%0a%0d%0aServicedesk%20ID:%20%0d%0a%0d%0aRequester%20Name:\
+              %20%0d%0a%0d%0aRequester%20Contact%20%28Phone%29:%20%0d%0a%0d%0aA\
+              ny%20deadline:"
+            openInNewTab: true
+  - id: text-box-cec57a0d-dde8-43bf-ad06-076b18176f50
+    type: text-box
+    settings:
+      placeholders:
+        - field: ACCOUNT.CSM__C
+        - field: CASE.CSM_LINE_MANAGER_EMAIL__C
+      title: ""
+      content: '<body><h1>Step 6:</h1><h2>Invite the Senior Customer Support
+        Engineer(s) (L2) and PnE Engineer(s) (L3) related to the affected
+        Service to Slack Channel. Also invite Account CSM</h2><br><p>See the
+        "Routing Guides" Section above to determine the correct L2 and L3
+        Engineer(s) to add to the Slack Channel.</p><br><p>Add Account CSM to
+        Slack Channel as well.</p><p>CSM: {0}</p><p>CSM Email: {1}</p></body>'
+  - id: text-box-c1bacca4-e17c-4b09-80bf-e17995b5dc6b
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: <body><h1>Step 7:</h1><h2>Collaborate and communicate with Incident
+        Commander through JIRA.</h2><h2>Updates will only happen for
+        milestones.</h2></body>
+  - id: iframe-9b74fcaa-551d-4062-8c63-7942431a18d3
+    type: iframe
+    settings:
+      src: https://customer-support.us-2.celonis.cloud/package-manager/ui/studio/ui/assets/e9ae2c01-df37-4e52-92da-dab1e41f1335#!/documents/e9ae2c01-df37-4e52-92da-dab1e41f1335/view
+      height: 1000px
+      width: 100%
+  - id: button-list-0358d652-2c05-49a7-bc90-482beda92957
+    type: button-list
+    settings:
+      buttons:
+        - label: Open Analysis in New Tab
+          id: e17f6b16-b4d0-4a5c-b035-30545b3e7cde
+          order: 100
+          variant: link
+          onClick:
+            href: https://customer-support.us-2.celonis.cloud/package-manager/ui/studio/ui/assets/e9ae2c01-df37-4e52-92da-dab1e41f1335#!/documents/e9ae2c01-df37-4e52-92da-dab1e41f1335/view
+            openInNewTab: true
+  - id: text-box-b43108d0-7dde-45bc-a33e-e32c879f4481
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: <body><h1>Root Cause Analysis (RCA)</h1><br><h3>The RCA will be created
+        based upon the Postmortem shared by Development Team and will be our
+        external communication to be shared outside</h3><h3>If a customer
+        requests an RCA please make a post in the incident Slack channel with
+        Unknown User (r.bachrouch) so she has it on her radar
+        already</h3><h3>Steps (Generally done by PnE
+        Engineers)</h3><ol><li>Check Slack channel for the finished
+        Postmortem</li><li>Make a copy of the RCA template and fill all relevant
+        sections</li><li>Request a review/creation of the Management summary
+        from your manager by email</li><li>Save the finished and approved RCA
+        as PDF</li><li>Share it with all affected customers as attachment and
+        move tickets to Solution Provided</li></ol>
+  - id: text-box-93bf488c-0776-495c-acb6-d1f3d647954a
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: <body><h1>Handover at end of your shift</h1><h3>Prior to the end of
+        your shift:</h3><ul><li>Handover the Ticket to an active
+        Engineer</li><li>Set same Engineer as Jira Reporter in Slack channel to
+        be liaison for questions from L3</li></ul></body>
+  - id: text-box-228a9d89-574f-41bd-a56f-ebdb77412dd6
+    type: text-box
+    settings:
+      placeholders: []
+      title: ""
+      content: <body><h1>Never Lower the Severity!</h1><h3>Severity is only lowered
+        during initial triage of incident if we determine the case does not meet
+        the Sev 1 definition and the engineer has explained this to the
+        customer</h3></body>
