@@ -1,0 +1,199 @@
+metadata:
+  key: analytical-view
+  template: false
+  name: "!Analytical View"
+  knowledgeModelKey: salesforce-activity-data-explorer-3_knowlegdeModel_1685770540179
+variables:
+  - id: ab6052b9-3e41-4702-a277-ef73040e04c0
+    name: id
+    type: string
+  - name: currentKpiName
+    type: string
+  - name: currentKpiId
+    type: string
+  - name: currentKpiName2
+    type: string
+  - name: currentKpiId2
+    type: string
+  - name: currentKpiName3
+    type: string
+  - name: currentKpiId3
+    type: string
+layout:
+  rows:
+    - id: row_a48ecc8a-0627-419a-ac56-2dc1ed16ecff
+      columns:
+        - id: column_84b4ae65-8292-4e4f-8199-d7ed4149d06e
+          componentId: dropdown-list-1c165f56-3091-448c-8b02-c15895f4730a
+          size: "1"
+          type: default
+          order: 100
+        - id: column_f33ed17e-a41d-40ce-b8a6-7901cf30b988
+          componentId: global-search-c04f05a4-351a-45f4-92bd-df1995d5f8c9
+          size: "1"
+          type: default
+          order: 200
+        - id: column_4a9eaf22-bcf6-44bb-ace4-4c8b32375a2c
+          componentId: time-filter-e4174e89-45af-40b8-b4b4-651845a2a1cf
+          size: "1"
+          type: default
+          order: 300
+      order: 50
+    - id: row_5e1633ac-871d-4932-89c2-d8aa6d746ee0
+      growHeight: false
+      columns:
+        - id: column_923649fc-e581-42e6-a27c-7de7ee383ebf
+          componentId: process-explorer-5e9a70c4-1567-426f-8d5f-82ebf2d202d6
+          size: "1"
+          type: default
+          order: 100
+      height: "700"
+      order: 100
+    - id: row_bc47dd7d-f907-426b-9990-f0d6681504fa
+      columns:
+        - id: column_2f54db79-41f8-4299-b35c-695650683cab
+          componentId: table-06420730-67ea-437d-9e6f-f0da895199a3
+          size: "1"
+          type: default
+          order: 100
+      order: 200
+components:
+  - id: process-explorer-945d0d26-f255-4422-b22c-42f5586facc2
+    type: process-explorer
+    settings:
+      eventLogs:
+        - eventLog: EL_CEL_SF_CASE_ACTIVITIES__ACTIVITY_EN
+          id: 367048d3-b122-4230-a1fb-806b59d580e1
+          order: 100
+      transitions: false
+  - id: process-explorer-46d056a2-1d56-4d4d-bc3c-2f3c7ed633c1
+    type: process-explorer
+    settings:
+      eventLogs:
+        - eventLog: EL_CEL_SF_CASE_ACTIVITIES__ACTIVITY_EN
+          id: 367048d3-b122-4230-a1fb-806b59d580e1
+          order: 100
+      transitions: false
+  - id: process-explorer-0f2fdafc-6a02-445a-9f89-660659ed4c04
+    type: process-explorer
+    settings:
+      name: Customer Service
+      eventLogs:
+        - attribute: CEL_SF_CASE_ACTIVITIES.ACTIVITY_EN
+  - id: process-explorer-b8454f42-4a46-4456-8b09-a97a33a21f27
+    type: process-explorer
+    settings:
+      name: Customer Service
+      eventLogs:
+        - attribute: CEL_SF_CASE_ACTIVITIES.ACTIVITY_EN
+  - id: process-explorer-0ba98242-1d17-4283-a3fa-e04ac22f4bf1
+    type: process-explorer
+    settings:
+      name: Customer Service
+      eventLogs:
+        - attribute: CEL_SF_CASE_ACTIVITIES.ACTIVITY_EN
+  - id: process-explorer-9503f3a6-d056-4fe9-a188-1db2822c3a3f
+    type: process-explorer
+    settings:
+      name: Customer Service
+      eventLogs:
+        - attribute: CEL_SF_CASE_ACTIVITIES.ACTIVITY_EN
+  - id: process-explorer-5e9a70c4-1567-426f-8d5f-82ebf2d202d6
+    type: process-explorer
+    settings:
+      name: Customer Service
+      eventLogs:
+        - attribute: CEL_SF_CASE_ACTIVITIES.ACTIVITY_EN
+  - id: dropdown-list-1c165f56-3091-448c-8b02-c15895f4730a
+    type: dropdown-list
+    settings:
+      data:
+        columns:
+          - attribute: CASE.OWNER_FULL_NAME__C
+            id: aade6f56-86ae-4263-b005-96466d4861d3
+            order: 100
+            displayName: Filter By Owner
+      name: Filter Case Owner
+  - id: time-filter-e4174e89-45af-40b8-b4b4-651845a2a1cf
+    type: time-filter
+    settings:
+      dateAttribute: CASE.CREATEDDATE
+      name: Filter by Date
+  - id: global-search-c04f05a4-351a-45f4-92bd-df1995d5f8c9
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.CASENUMBER
+      name: Search Case NO.
+  - id: activity-history-84470765-7a10-46b1-ab38-59ca517edd8e
+    type: activity-history
+    settings:
+      knowledgeModelKey: salesforce-activity-data-explorer-3_knowlegdeModel_1685770540179
+      recordMetadataId: CEL_SF_CASE_ACTIVITIES
+      objectId: ${id}
+  - id: table-11e5dbb0-f832-4d93-8da2-457c992ee302
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASE.CASENUMBER
+            onClick:
+              linkToRecordProfile: true
+      options:
+        showPagination: false
+  - id: table-06420730-67ea-437d-9e6f-f0da895199a3
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASE.CASENUMBER
+            onClick:
+              linkToRecordProfile: true
+            id: 4c274d64-1da1-4f45-9407-d055d6fc5bdf
+            order: 100
+          - field: CASE.SEVERITY__C
+            id: 35dac3a7-0f33-4ed9-b1ae-e7eebfa2fe2b
+            order: 200
+          - field: CASE.CREATEDDATE
+            id: 798c2114-2fe4-484d-9c8f-29bd3e44a336
+            order: 300
+          - field: CASE.LASTMODIFIEDDATE
+            id: 141f7142-09a6-4293-91b3-61133f098237
+            order: 400
+          - field: CASE.STATUS
+            id: ad6e9776-5ae6-4379-bff6-39b7b799ff91
+            order: 500
+          - field: CASE.OWNER_FULL_NAME__C
+            id: ee24399e-9e78-40e7-a2d3-bdb7f7c24377
+            order: 600
+          - field: CASE.SUBJECT
+            id: ab3be125-d36d-43b3-9fdd-d7647234fa75
+            order: 700
+          - field: CASE.CREATED_BY_FULL_NAME__C
+            id: 61852f34-609d-43de-bb99-f505fee022eb
+            order: 800
+          - field: CASE.CONTACTEMAIL
+            id: 6da952e3-e558-4c53-a126-eba308aad05c
+            order: 900
+          - field: ACCOUNT.NAME
+            id: cce33654-0a89-4a59-aab0-25cdc53611d0
+            order: 1000
+        sortBy: []
+      options:
+        showPagination: false
+        resizeMode: expand
+      name: Cases Overview
+    filters:
+      - name: currentKpiName
+        id: ${ (currentKpiId === 'tickets_in_progress'  && 'in_progress') ||
+          (currentKpiId === 'tickets_on_hold' && 'on_hold') || (currentKpiId ===
+          'tickets_solution_provided' && 'solution_provided') || (currentKpiId
+          === 'new_tickets' && 'new_tickets') }
+      - name: currentKpiName2
+        id: ${ (currentKpiId2 === 'sev_1_cases'  && 'sev_1') || (currentKpiId2 ===
+          'sev_2_cases'  && 'sev_2') || (currentKpiId2 === 'sev_3_cases'  &&
+          'sev_3') || (currentKpiId2 === 'sev_4_cases'  && 'sev_4') }
+      - name: currentKpiName3
+        id: ${ (currentKpiId3 === 'waiting_for_customer'  && 'waiting_for_customer') ||
+          (currentKpiId3 === 'waiting_for_dev' && 'waiting_for_development') ||
+          (currentKpiId3 === 'waiting_internal' && 'waiting_on_internal') }
