@@ -1,0 +1,426 @@
+metadata:
+  key: multi-hop-tickets
+  template: false
+  name: Multi-Hop Tickets
+  knowledgeModelKey: -salesforce-activity-data-model-copy
+  knowledgeObjectId: CASE
+  profileView: true
+variables:
+  - id: 511d7c9b-729d-4517-89e1-e18a69141299
+    name: currentDimension_1
+    defaultValue: ClientGroup
+    type: STRING
+layout:
+  rows:
+    - id: row_858f2cb9-8702-4aaa-913c-b5b015cc7a67
+      growHeight: true
+      columns:
+        - id: tab-d9431aa2-d942-4588-9550-b0d2e748fbcd
+          layout:
+            rows:
+              - id: row_5e23c893-18d9-415b-8e8b-8836ccafee79
+                columns:
+                  - id: column_d84e10ee-41e0-46a7-8cbb-b86090c4eab1
+                    layout:
+                      rows:
+                        - id: row_c4226c3c-514c-48ac-a5c5-7b4c1cdbe8fe
+                          growHeight: true
+                          removePadding: false
+                          columns:
+                            - id: column_b0355094-0afa-4d0c-8626-4e707390cab6
+                              layout:
+                                rows:
+                                  - id: test_row_4
+                                    removePadding: false
+                                    columns:
+                                      - id: test_column
+                                        componentId: text-box-75f9c4b8-79a2-4ec9-9d4a-b88c1f8fcbcf
+                                        size: "1"
+                                        type: panel
+                                        order: 100
+                                    height: ""
+                                    order: 100
+                                  - id: row_be144b84-b7a1-40cb-9328-0c9f2d43676a
+                                    removePadding: true
+                                    columns:
+                                      - id: column_e3d67ac8-64ba-4154-b9ba-aacad186c983
+                                        componentId: kpi-list-e3a9cac5-b9c4-47ed-a427-b01e24b4186f
+                                        size: "1"
+                                        type: panel
+                                        order: 100
+                                    order: 200
+                                  - id: row_b074c4b4-54c6-468d-863a-5755cb220860
+                                    columns:
+                                      - id: column_cc982be9-c20c-4fc5-9005-e37d0811fe4b
+                                        componentId: text-box-196d1407-521b-4728-9804-9d244ff08cfe
+                                        size: "1"
+                                        order: 25
+                                      - id: column_335f3d04-c813-4142-8814-24df06703a63
+                                        componentId: text-box-196d1407-521b-4728-9804-9d244ff08cfe
+                                        size: "2"
+                                        order: 50
+                                      - id: column_9c196fa7-3533-46ed-a7df-aa8b9c891ba6
+                                        layout:
+                                          rows:
+                                            - id: row_91176ee5-b603-4f46-a5e0-c8e428ab1765
+                                              columns:
+                                                - id: column_282c79d8-fa27-4ff7-a36f-990a588b3d6c
+                                                  componentId: dropdown-list-f7c2d71c-7e0d-4703-aa2b-8d017090f6f1
+                                                  size: "1"
+                                                  order: 100
+                                              order: 100
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                    order: 250
+                                  - id: row_75d588f2-5477-40d7-8e7a-b21620d8bdc4
+                                    growHeight: true
+                                    removePadding: false
+                                    columns:
+                                      - id: column_ad826bb1-0bff-4c07-98dd-4dab83a5cac2
+                                        componentId: bar_chart
+                                        size: "1"
+                                        type: panel
+                                        height: ""
+                                        order: 100
+                                    order: 300
+                              size: "1"
+                              type: panel
+                              order: 100
+                            - id: column_8ecd99f0-f527-4dcd-91a8-e8bd23960cd0
+                              layout:
+                                rows:
+                                  - id: test_row_3
+                                    growHeight: false
+                                    removePadding: false
+                                    columns:
+                                      - id: some_id
+                                        componentId: text-box-ed8869a5-4c37-46aa-b99b-f3d8097efe03
+                                        size: "1"
+                                        type: panel
+                                        order: 200
+                                    order: 200
+                                  - id: row_9bbf2dfc-6e58-4cc2-8be7-fded3746f58f
+                                    growHeight: true
+                                    columns:
+                                      - id: 8b4c84e1-dac2-42b7-a014-a7cab3a808e1
+                                        tabs:
+                                          - id: tab-da1ace95-bd8f-4939-b6fe-95a23bc43867
+                                            componentId: table-d2df1f86-7397-4bd1-85b6-2e4294059e21
+                                            label: Multi-Hop Tickets by Type
+                                            order: 100
+                                          - id: tab-9d7b500b-7a8b-45e6-a0e6-2a937e06b5e8
+                                            layout:
+                                              rows:
+                                                - id: row_f8b3a614-5670-416c-8bfa-fe954badeab4
+                                                  columns:
+                                                    - id: column_10bb030e-1dcd-4730-bb34-93cbd4edc7b1
+                                                      componentId: text-box-d3c0331e-2c47-468b-b459-7fc29960e917
+                                                      size: "1"
+                                                      order: 25
+                                                  order: 50
+                                                - id: row_a0aabe35-a1ee-4c90-b4ec-7100ac8dcc1e
+                                                  growHeight: true
+                                                  columns:
+                                                    - id: column_1b4c3576-e43e-4fb2-8308-552475c2bfa9
+                                                      componentId: table-d92bed86-06f2-4ce5-91ec-a5039d757085
+                                                      size: "1"
+                                                      order: 100
+                                                  order: 100
+                                            label: General Drilldown
+                                            order: 200
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                    order: 300
+                                  - id: row_e8145d79-9302-4b94-a0a5-e7eaf055e6d9
+                                    columns:
+                                      - id: column_cc186799-b684-4d12-b3fd-487e340b3ae5
+                                        componentId: button-list-66c0adaa-8ad0-4e20-a924-c675d8370667
+                                        size: "1"
+                                        type: default
+                                        order: 100
+                                    order: 400
+                              size: "1"
+                              type: panel
+                              order: 400
+                          order: 28
+                    size: "1"
+                    order: 100
+                order: 100
+          size: "1.1"
+          order: 50
+      order: 14
+components:
+  - id: Root_Cause_Table
+    type: table
+    settings:
+      name: " "
+      options:
+        selectable: false
+        autoAlignment: true
+        autoShrink: true
+      data:
+        columns:
+          - field: ACCOUNT.NAME
+            id: 30103489-7681-4071-829f-47ea408ccc3f
+            order: 100
+          - field: multihop_count
+            id: 2e6b4d1b-79bc-45a4-a91c-58cd95b8156e
+            order: 200
+          - field: COUNT_TABLE__CASE
+            id: 7d3a4b14-43c4-41f2-a178-638349a708a3
+            order: 300
+            hide: true
+          - field: impact_of_multihop_tickets
+            id: adee5ac8-4584-4add-9d8c-66e405a38089
+            order: 400
+        distinct: true
+        sortBy:
+          - field: multihop_count
+            direction: DESC
+            id: 7bfb9ba7-ac8a-4f21-a83f-b09c82e13568
+            order: 100
+  - id: text-box-75f9c4b8-79a2-4ec9-9d4a-b88c1f8fcbcf
+    type: text-box
+    settings:
+      name: Impact of Multi-Hop Tickets
+      content: <p align='justify'>Multi-Hop Tickets <b>generate huge amounts of
+        workload</b> due to agents receiving tickets that they cannot resolve,
+        lack the training to resolve or lack to qualify the issue.</p>
+      infoText:
+        title: Impact of Frequent Delivery Date Changes
+        content: Celonis visualizes the impact of the execution gap in detail. <br><br>
+          <b>METRIC NAME</b><br>METRIC DESCRIPTION.<br><br><b>METRIC
+          NAME</b><br>METRIC DESCRIPTION.<br><br><b>Realization
+          Potential</b><br>DESCRIPTION. The number is based on benchmarks of
+          existing Celonis customers and validated by their
+          success.<br><br><b>Impact</b><br>The resulting possible savings that
+          can be realized when introducing Celonis to close this specific
+          execution gap.
+      title: ""
+  - id: text-box-ed8869a5-4c37-46aa-b99b-f3d8097efe03
+    type: text-box
+    settings:
+      name: Root Cause Detection
+      content: <p align='justify'>Multi-Hop tickets are transferred between agents
+        from different support levels as a result of <b>missing qualification of
+        the issue and tickets not being routed directly to the corresponding
+        agent.</b> This occurs either because agents do not assume they are not
+        responsible for a ticket or they lack the necessary training and tools
+        to resolve the query on their support level.</p>
+      infoText:
+        title: Root Cause
+        content: Celonis helps not only to analyze the execution gap and its impact but
+          also to identify the actual root cause causing the execution
+          gap.<br><br> <b>ROOT CAUSE TITLE</b><br>ROOT CAUSE
+          DESCRIPTION.<br><br><b>ROOT CAUSE TITLE</b><br>ROOT CAUSE DESCRIPTION.
+      title: ""
+  - id: kpi-list-e3a9cac5-b9c4-47ed-a427-b01e24b4186f
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: effort_per_duplicate_ticket
+            id: 00a4aeac-3925-40f7-ac71-f62c04bd0b75
+            order: 100
+            show: true
+          - kpi: multihop_count
+            id: 36b84018-458a-4e10-acf0-77c9050e642c
+            order: 200
+            show: true
+          - kpi: impact_of_multihop_tickets
+            id: beb96a3b-83fa-4d5a-9469-092137489c8d
+            order: 400
+            show: true
+      options:
+        showTarget: false
+        showSettings: false
+        showBenchmark: true
+        showPriority: true
+        size: sm
+      styles:
+        overflow: full-width
+        position:
+          horizontal: full
+          vertical: bottom
+  - id: table-d92bed86-06f2-4ce5-91ec-a5039d757085
+    type: table
+    settings:
+      name: " "
+      options:
+        selectable: false
+        autoAlignment: true
+      data:
+        columns:
+          - field: CASE.SERVICE__C
+            id: 382a185f-5666-465b-954c-caac804fad04
+            order: 100
+          - field: COUNT_TABLE__CASE
+            id: 026572c4-8da4-42ed-a05e-dce472d44ea4
+            order: 200
+          - field: impact_of_multihop_tickets
+            id: Deliver Date Change Impact
+            order: 300
+        distinct: true
+        sortBy:
+          - field: impact_of_multihop_tickets
+            direction: DESC
+            id: 5568ba4d-c0c4-49a9-8ae4-133fc232c3c1
+            order: 100
+  - id: dropdown-list-a27b037f-4b18-40e6-b57e-bd058409e7f6
+    type: dropdown-list
+    settings:
+      floatingPlaceholder: true
+      styles:
+        overflow: line-break
+        position:
+          horizontal: center
+          vertical: center
+      data:
+        columns:
+          - attribute: CASE.PRODUCT_AREA__C
+            id: 100
+            order: 100
+            displayName: Dimension
+            selected: Material
+            onClick:
+              update:
+                variables:
+                  - name: currentDimension_1
+  - id: text-box-60c1de5b-2a01-41d3-9807-dc01cf31307e
+    type: text-box
+    settings:
+      title: Drilldown by Calling Reason
+      content: ""
+  - id: button-list-66c0adaa-8ad0-4e20-a924-c675d8370667
+    type: button-list
+    settings:
+      buttons:
+        - label: Set up Action Flow
+          icon: board-charts
+          variant: primary
+          order: 100
+          id: fee30f76-78a2-4628-8fee-379838c2e817
+          onClick:
+            href: /package-manager/ui/by-keys?packageKey=it-service-mgmt-ems&assetKey=servicenow-support-tier-assignment&views=true
+            openInNewTab: true
+  - id: bar_chart
+    type: chart
+    settings:
+      encodings:
+        x:
+          field: CASE.CAUSE_CODE__C
+        y:
+          field: multihop_count
+      visuals:
+        - mark:
+            type: bar
+            bandwidth: 0
+          encodings:
+            y:
+              format: .2s
+              field: multihop_count
+          id: 77325a86-ceca-4915-9fde-2d7e975c8a8f
+          order: 100
+        - mark:
+            type: point
+            point:
+              width: 5
+              height: 5
+              shape: circle
+          id: 8e546ccf-58d3-4502-bd5b-59c6f32ebb80
+          order: 200
+          encodings:
+            y:
+              field: impact_of_multihop_tickets
+              axis:
+                position: right
+      limit: 1000
+  - id: button-list-513ef33d-5e10-4173-ae8a-69f3529a269d
+    type: button-list
+    settings:
+      buttons:
+        - label: Action Signal
+          id: e69f4ad0-e447-4e2a-9ac7-77731e377f15
+          order: 100
+          variant: primary
+          onClick:
+            href: https://tpl-contact-centre.try.celonis.cloud/action-engine/ui/my-inbox/signals
+            openInNewTab: true
+  - id: button-list-8ca5b1cf-20c2-4078-b5f1-0f1b22c82f25
+    type: button-list
+    settings:
+      buttons:
+        - label: Action Signal
+          id: f8875a0f-ca61-4ea3-b28f-e0a018e464f7
+          order: 100
+          onClick:
+            href: https://tpl-contact-centre.try.celonis.cloud/action-engine/ui/my-inbox/signals
+            openInNewTab: true
+          variant: primary
+  - id: text-box-d3c0331e-2c47-468b-b459-7fc29960e917
+    type: text-box
+    settings:
+      title: Drilldown by Calling Reason
+      content: ""
+  - id: table-d2df1f86-7397-4bd1-85b6-2e4294059e21
+    type: table
+    settings:
+      options:
+        autoAlignment: true
+      data:
+        columns:
+          - field: CASE.CASENUMBER
+            id: 093b2db9-f77f-4dd5-96ba-d8783547b68a
+            order: 100
+          - field: impact_of_multihop_tickets
+            id: ece18e5a-ba39-4242-bae2-07a44c5a647c
+            order: 200
+          - field: CASE.ISSUE_TYPE__C
+            id: 25fa54a0-7fac-4c98-964e-9208cad411c2
+            order: 300
+          - field: CASE.CAUSE_CODE__C
+            id: 730e9dcb-ea4d-43e6-b082-a89dd6c1a304
+            order: 400
+        sortBy:
+          - field: impact_of_multihop_tickets
+            direction: DESC
+            id: de512a22-b127-438a-81f4-900d4e3c576a
+            order: 100
+  - id: button-list-8d8b5fd3-4e0e-488b-a710-ff7daf3646a1
+    type: button-list
+    settings:
+      buttons:
+        - label: Task Inbox
+          id: b5fdd5e2-cca6-4c14-b6fb-1e11a3cd87c7
+          order: 100
+          variant: primary
+          onClick:
+            href: /action-engine/ui/my-inbox/signals
+            openInNewTab: true
+  - id: dropdown-list-f7c2d71c-7e0d-4703-aa2b-8d017090f6f1
+    type: dropdown-list
+    settings:
+      floatingPlaceholder: true
+      styles:
+        overflow: line-break
+        position:
+          horizontal: center
+          vertical: center
+      data:
+        columns:
+          - attribute: CASE.SERVICE__C
+            id: 100
+            order: 100
+            displayName: Dimension
+            selected: Material
+            onClick:
+              update:
+                variables:
+                  - name: currentDimension_1
+  - id: text-box-196d1407-521b-4728-9804-9d244ff08cfe
+    type: text-box
+    settings:
+      title: ""
+      content: " "
