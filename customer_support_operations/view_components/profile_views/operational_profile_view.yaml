@@ -1,0 +1,557 @@
+metadata:
+  key: operational-profile-view
+  template: false
+  name: "!Operational Profile View"
+  knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+  knowledgeObjectId: CASE
+  profileView: true
+variables:
+  - id: currentMessageId
+    name: currentMessageName
+  - id: 9ff8f5d2-2195-4e78-afb4-4d8060ee712f
+    name: id
+    type: string
+layout:
+  rows:
+    - id: row_e1e38f48-739f-4bb1-a949-3baf658f985e
+      columns:
+        - id: column_8354c9ba-3330-4f94-b327-a1784d3907f8
+          componentId: attribute-list-5dde0cc6-59cf-47d6-a7fe-28467253f3de
+          size: "1"
+          type: default
+          order: 100
+        - id: column_bd1bda0e-adea-4e17-98a4-5195d8d9453f
+          componentId: table-1161ecb9-84ca-498f-b172-9930457af69c
+          size: "1"
+          order: 200
+      order: 100
+    - id: row_7250b31a-dcb4-4953-8587-5b1aa36e2a93
+      columns:
+        - id: column_7b752cd9-39e8-4567-b276-67653998758c
+          componentId: button-list-a52eb834-f8a4-4a07-9c1c-8cd22850b797
+          size: "1"
+          type: default
+          order: 100
+        - id: column_3b28eabc-627a-4c0e-ad4e-7f9f58aeb828
+          componentId: comments-866a6e42-ba43-446b-853d-742c3fc0127b
+          size: "1"
+          type: default
+          order: 200
+      order: 200
+    - id: row_40730e2c-f396-4d0f-94b2-2b7c32bf0408
+      columns:
+        - id: column_d82b7663-6685-4a18-a8fe-7c4060972276
+          componentId: text-box-0c892581-ae5b-487a-8cb3-df50551516a1
+          size: "1"
+          type: default
+          order: 100
+      order: 300
+    - id: row_bb45edf4-a42e-4f9e-9139-c18983cecb61
+      columns:
+        - id: column_6182d3fa-8ba8-44e4-9832-188d7f9c79d6
+          componentId: text-box-28fcb554-31cd-445a-94cc-c612222b8a56
+          size: "1"
+          type: default
+          order: 100
+      order: 325
+    - id: row_d8c03fa0-85b5-429c-9db3-7d5205f71614
+      columns:
+        - id: column_83bec270-c254-43f7-8220-a28b822a3c8f
+          componentId: text-box-ab11abbe-2682-494a-bdba-f31a91232baa
+          size: "1"
+          type: default
+          order: 100
+      order: 337
+    - id: row_2ffaec68-edda-444a-a0c2-6670e3378e58
+      columns:
+        - id: column_01eeed4d-a1db-4fe2-86a0-e494afc85624
+          componentId: text-box-d3832ee4-900c-4ab3-9548-95baf9642087
+          size: "1"
+          type: default
+          order: 100
+      order: 343
+    - id: row_746eb6d4-21ac-4fa4-a023-f6b5cb0686da
+      columns:
+        - id: column_b9dccb00-5638-44b0-8588-2d5b569a44ba
+          componentId: text-box-7faedced-d5bd-498e-be6b-4597871f3f1d
+          size: "1"
+          type: default
+          order: 100
+      order: 350
+    - id: row_38899bb4-b737-4ee4-950b-cdf6fa2e62d1
+      columns:
+        - id: column_83d39973-e5a9-46f3-9a63-fbceb93bfcd5
+          componentId: text-box-3a9241c1-4d74-4697-a10f-f1249d3e1a91
+          size: "1"
+          type: default
+          order: 100
+      order: 375
+    - id: row_7db76495-1962-4c42-aae7-b148df7e96c6
+      columns:
+        - id: column_de3283cf-f252-48ee-9ae6-dee57f378bc4
+          componentId: table-aae27625-5876-4533-8134-0d158ce59dbf
+          size: "1"
+          type: default
+          order: 100
+      order: 381
+    - id: row_6e9cfb44-a6f6-44f2-9799-91787132d709
+      columns:
+        - id: column_34aac9ea-9ee6-4dbb-8c5b-ffae97e76ece
+          componentId: table-5f609aaa-a5d1-4a3f-bf57-c61d46184cbd
+          size: "1"
+          type: default
+          order: 100
+      order: 384
+    - id: row_3a7ec048-c199-46fc-8b22-c438b2f555df
+      columns:
+        - id: column_2759e468-98d6-4925-9809-8c994c2be5d2
+          componentId: table-4d6a1c6f-dabb-4519-8684-8a4606715bb7
+          size: "1"
+          order: 500
+      order: 387
+components:
+  - id: attribute-list-5dde0cc6-59cf-47d6-a7fe-28467253f3de
+    type: attribute-list
+    settings:
+      data:
+        - field: CASE.CASENUMBER
+          id: 3c5ddc72-246c-485b-9fd2-168de0279945
+          order: 100
+        - field: CASE.OWNER_FULL_NAME__C
+          id: a82c5ee0-8103-40dc-9d4c-0d0cfb2608b3
+          order: 200
+        - field: CASE.PRIORITY
+          id: 392d51b5-1173-47cc-a4a2-f2fa3a4d425c
+          order: 300
+        - field: CASE.SEVERITY__C
+          id: 187dc48e-197d-4190-a1b2-00c95d72e6e3
+          order: 400
+        - field: CASE.SUBJECT
+          id: 838af42e-3c1f-40bd-a7a2-75408c5694f6
+          order: 500
+        - field: CASE.DESCRIPTION
+          id: 2dfdad72-43c4-4600-8132-45f8600aafec
+          order: 600
+        - field: CASE.CREATED_BY_FULL_NAME__C
+          id: ced80412-8bd1-462d-ab12-8467c7438dcd
+          order: 700
+        - field: CASE.CONTACTEMAIL
+          id: 02b8e709-8f27-44a8-8919-f9996cf5b790
+          order: 800
+        - field: CASE.CREATEDDATE
+          id: 6d430790-0aab-4097-b13d-dc7585120ed5
+          order: 900
+        - field: CASE.LASTMODIFIEDDATE
+          id: 1ce8f47d-438c-4b7a-9d42-34132c0dd47c
+          order: 1000
+        - field: ACCOUNT.NAME
+          id: 1b8d220e-454f-4806-a4d3-4e54a7509967
+          order: 1100
+        - field: ACCOUNT.ID
+          id: f44b9bd2-56fe-41be-9f22-370ccd4b96c3
+          order: 1200
+        - field: CASE.TEAM_URL__C
+          id: f1204580-503b-4a13-ae36-e2f184a39750
+          order: 1300
+      orientation: vertical
+      position: null
+      name: Quick Look
+  - id: table-ee8c52c6-bcc5-48bd-94d0-37a991d77400
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASEHISTORY.CREATEDDATE
+            id: 2d88f307-c75e-4d39-8278-6c0d8b8b3c31
+            order: 100
+          - field: CASEHISTORY.FIELD
+            id: 879f3f3a-705b-417b-a384-ed46fdceba73
+            order: 200
+          - field: CASEHISTORY.OLDVALUE
+            id: 7eb4e9e2-5be3-456d-a9c4-9092010121be
+            order: 300
+          - field: CASEHISTORY.NEWVALUE
+            id: 8d9e1948-1d7d-4e1d-97de-69c90cc54c05
+            order: 400
+        sortBy:
+          - field: CASEHISTORY.CREATEDDATE
+            direction: DESC
+            id: e54dd76d-a597-408b-8243-d5d5060d0e9a
+            order: 100
+        pageSize: 17
+      options:
+        showPagination: true
+      name: Case History
+  - id: button-list-a52eb834-f8a4-4a07-9c1c-8cd22850b797
+    type: button-list
+    settings:
+      buttons:
+        - label: Open in Jira
+          id: aaf670ec-07a2-4717-b462-67ae9343fdb8
+          order: 100
+          variant: primary
+          onClick:
+            href: https://celonis.atlassian.net/browse/{0}
+            openInNewTab: true
+            placeholders:
+              - field: CASE.JIRA_KEY__C
+        - label: Open in Salesforce
+          id: c733db6e-0022-49ca-9318-8a1987a8307a
+          order: 200
+          onClick:
+            href: https://celonis.lightning.force.com/lightning/r/Case/{0}/view
+            openInNewTab: true
+            placeholders:
+              - field: CASE.ID
+          variant: primary
+        - label: Start Sev 1 Process
+          id: a564a5b6-746b-4b01-93a9-65e4d764d54d
+          order: 300
+          variant: danger
+          onClick:
+            openView:
+              viewKey: sev-1-profile-view
+              openInSideOverlay: true
+              carryFilters: true
+              carrySelections: true
+      styles:
+        position:
+          vertical: center
+          horizontal: full
+  - id: comments-866a6e42-ba43-446b-853d-742c3fc0127b
+    type: comments
+    settings:
+      object: DEFAULT_OBJECT
+      objectId: 1666666771802
+  - id: text-box-5996945f-5a6e-4c52-8166-bc2f7b9a2907
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.TICKET_DESCRIPTION__C
+      title: Ticket Description
+      content: ""
+      name: ""
+  - id: text-box-6da928e9-36c5-49c6-8bac-0a48ef056e97
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.TICKET_DESCRIPTION__C
+      title: Ticket Description
+      content: ""
+  - id: text-box-e7c7e0e4-0e49-4cf9-990a-5d4d7826ff42
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.TICKET_DESCRIPTION__C
+      title: Ticket Description
+      content: "{0}"
+  - id: text-box-7faedced-d5bd-498e-be6b-4597871f3f1d
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.KM_RESEARCH__C
+      title: KM Research
+      content: "{0}"
+  - id: text-box-3a9241c1-4d74-4697-a10f-f1249d3e1a91
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.SDM_SUMMARY__C
+      title: SDM Summary
+      content: "{0}"
+  - id: text-box-f913ce82-40fe-456a-af29-f106c0cd1b85
+    type: text-box
+    settings:
+      placeholders: []
+      title: Case Feed
+      content: ""
+  - id: table-4d6a1c6f-dabb-4519-8684-8a4606715bb7
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASECOMMENT.CELONIS_CHANGE_DATE
+            id: be5202d8-d66b-4d6c-acc6-5e4a1012b9c1
+            order: 100
+          - field: CASECOMMENT.COMMENTBODY
+            id: 44410b72-b11a-473e-9076-a4563bdead96
+            order: 200
+          - field: CASECOMMENT.CREATEDBYID
+            id: f1d1f675-1597-4a38-8ad4-b0949baebc43
+            order: 300
+          - field: CASECOMMENT.CREATEDDATE
+            id: 2d205997-4a5b-4ee2-9dae-f70dbd0b18e3
+            order: 400
+          - field: CASECOMMENT.ID
+            id: edff738d-1a7b-4ea5-a7e8-49545c7bcb35
+            order: 500
+          - field: CASECOMMENT.ISDELETED
+            id: f8a63810-fe25-4a48-aa55-28ddc497556a
+            order: 600
+          - field: CASECOMMENT.ISPUBLISHED
+            id: e035d88a-46db-444e-a1d1-2cab6f63b76c
+            order: 700
+          - field: CASECOMMENT.LASTMODIFIEDBYID
+            id: b1673544-c34b-4150-99d6-5f7c7183c6e2
+            order: 800
+          - field: CASECOMMENT.LASTMODIFIEDDATE
+            id: 0f80f394-0d69-4911-b1b7-33c97b980f62
+            order: 900
+          - field: CASECOMMENT.PARENTID
+            id: 78448fd3-ce61-4fd6-9d9c-622166efb41e
+            order: 1000
+          - field: CASECOMMENT.SYSTEMMODSTAMP
+            id: ebf000d2-8b35-47ec-8bbb-b0890d9b10bc
+            order: 1100
+        sortBy:
+          - field: CASEFEED.CREATEDDATE
+            direction: DESC
+            id: e7ad6daa-fa4f-430e-a591-c852575d9ee2
+            order: 100
+      options:
+        showPagination: false
+      name: Case Feed Overview
+  - id: text-box-a0f2d6c9-fac9-4302-b156-81cdfea233d4
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASEFEED.CREATEDDATE
+        - field: CASEFEED.BODY
+        - field: CASEFEED.TYPE
+      title: Message Detailed View
+      content: "{0} : {1}"
+  - id: table-bdba65a7-7ab0-4802-a5d9-a00c924e94c1
+    type: table
+    settings:
+      data:
+        columns:
+          - field: EMAILMESSAGE.CREATEDDATE
+            id: b491a747-c5a3-4caf-b305-1a5823b10299
+            order: 100
+          - field: EMAILMESSAGE.FROMNAME
+            id: 672648e5-485e-484b-9ec3-d35a787c0d15
+            order: 200
+          - field: EMAILMESSAGE.FROMADDRESS
+            id: 7a5b1b10-3714-453e-8ace-1262dd63454c
+            order: 300
+          - field: EMAILMESSAGE.SUBJECT
+            id: a23dc2b9-f4d1-4943-b915-10f3b052e9aa
+            order: 400
+            onClick:
+              openView:
+                profileView: true
+                carryFilters: true
+                openInSideOverlay: true
+          - field: EMAILMESSAGE.TEXTBODY
+            id: 3ae1fb44-ccd5-48a7-a002-4fd02eb47303
+            order: 500
+        sortBy:
+          - field: EMAILMESSAGE.CREATEDDATE
+            direction: DESC
+            id: e8a81019-cef9-4373-85bd-fad23d1bea50
+            order: 100
+      options:
+        showPagination: false
+      name: Case Email Correspondence
+  - id: activity-history-abd75ee9-1dd4-465c-9210-034e791548e0
+    type: activity-history
+    settings:
+      knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+      recordMetadataId: CASE
+      objectId: ${id}
+  - id: text-box-0c892581-ae5b-487a-8cb3-df50551516a1
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.ISSUE_CLARIFICATION__C
+      title: Problem
+      content: "{0}"
+  - id: text-box-28fcb554-31cd-445a-94cc-c612222b8a56
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.ISSUE_VERIFICATION__C
+      title: Error
+      content: "{0}"
+  - id: text-box-ab11abbe-2682-494a-bdba-f31a91232baa
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.DESCRIPTION_OF_SOLUTION_IMPLEMENTED__C
+      title: Actions Taken
+      content: "{0}"
+  - id: text-box-d3832ee4-900c-4ab3-9548-95baf9642087
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASE.ACTION_PLAN__C
+      title: Solution
+      content: "{0}"
+  - id: table-aae27625-5876-4533-8134-0d158ce59dbf
+    type: table
+    settings:
+      data:
+        columns:
+          - field: EMAILMESSAGE.CREATEDDATE
+            id: b491a747-c5a3-4caf-b305-1a5823b10299
+            order: 100
+          - field: EMAILMESSAGE.FROMNAME
+            id: 672648e5-485e-484b-9ec3-d35a787c0d15
+            order: 200
+          - field: EMAILMESSAGE.FROMADDRESS
+            id: 7a5b1b10-3714-453e-8ace-1262dd63454c
+            order: 300
+          - field: EMAILMESSAGE.SUBJECT
+            id: a23dc2b9-f4d1-4943-b915-10f3b052e9aa
+            order: 400
+            onClick:
+              openView:
+                profileView: true
+                carryFilters: true
+                openInSideOverlay: true
+          - field: EMAILMESSAGE.TEXTBODY
+            id: 3ae1fb44-ccd5-48a7-a002-4fd02eb47303
+            order: 500
+            copyToClipboard: true
+        sortBy:
+          - field: EMAILMESSAGE.CREATEDDATE
+            direction: DESC
+            id: e8a81019-cef9-4373-85bd-fad23d1bea50
+            order: 100
+        displayLimit: 100
+      options:
+        showPagination: false
+        resizeMode: expand
+        allowContentLineBreak: true
+        allowHeaderLineBreak: true
+      name: Case Email Correspondence
+  - id: activity-history-54210a06-307d-41a8-819b-37d12647a856
+    type: activity-history
+    settings:
+      knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+      recordMetadataId: CASE
+      objectId: ${id}
+  - id: activity-history-e12c9226-b6c3-4e17-9f79-35c66302e603
+    type: activity-history
+    knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+    settings:
+      knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+      recordMetadataId: CASE
+      objectId: ${id}
+  - id: table-fa6652a0-ebb4-4891-bc02-c0f263424a37
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASEHISTORY.CREATEDDATE
+            id: 8ec64de0-db81-43d5-9557-0bf9d7e821ec
+            order: 100
+          - field: CASEHISTORY.FIELD
+            id: 6ea4b4f8-7508-4431-a73a-3fc1d92d63e1
+            order: 200
+          - field: CASEHISTORY.NEWVALUE
+            id: fdea33b7-1b97-45c7-87ce-17b4bf4cfba5
+            order: 300
+          - field: CASEHISTORY.OLDVALUE
+            id: d22c8334-b349-4058-984e-59bf41e37b29
+            order: 400
+        sortBy: []
+      options:
+        showPagination: false
+  - id: button-list-46d01734-c61b-4302-bb8f-4af01d7a900f
+    type: button-list
+    settings:
+      buttons:
+        - label: View in Process Explorer
+          id: cf03180d-8f8a-43b8-a3ca-e3623d9ce2cb
+          order: 100
+          variant: info
+          onClick:
+            openView:
+              viewKey: analytical-view
+              openInSideOverlay: false
+              syncFilters: forward-only
+  - id: activity-history-b266dde3-6bf9-4b14-9ed1-090eb316f935
+    type: activity-history
+    settings:
+      knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+      recordMetadataId: CASE
+      objectId: ${id}
+  - id: table-d1108882-c025-4350-8d18-d73ea0c6d7bc
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASEHISTORY.CREATEDDATE
+            id: 8ec64de0-db81-43d5-9557-0bf9d7e821ec
+            order: 100
+          - field: CASEHISTORY.FIELD
+            id: 6ea4b4f8-7508-4431-a73a-3fc1d92d63e1
+            order: 200
+          - field: CASEHISTORY.NEWVALUE
+            id: fdea33b7-1b97-45c7-87ce-17b4bf4cfba5
+            order: 300
+          - field: CASEHISTORY.OLDVALUE
+            id: d22c8334-b349-4058-984e-59bf41e37b29
+            order: 400
+        sortBy: []
+      options:
+        showPagination: false
+  - id: table-1161ecb9-84ca-498f-b172-9930457af69c
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASEHISTORY.CREATEDDATE
+            id: 8ec64de0-db81-43d5-9557-0bf9d7e821ec
+            order: 100
+          - field: CASEHISTORY.FIELD
+            id: 6ea4b4f8-7508-4431-a73a-3fc1d92d63e1
+            order: 200
+          - field: CASEHISTORY.OLDVALUE
+            id: d22c8334-b349-4058-984e-59bf41e37b29
+            order: 300
+          - field: CASEHISTORY.NEWVALUE
+            id: fdea33b7-1b97-45c7-87ce-17b4bf4cfba5
+            order: 400
+        sortBy:
+          - field: CASEHISTORY.CREATEDDATE
+            direction: DESC
+            id: 3c71ec87-6f9d-4175-af43-06f707d0e568
+            order: 100
+      options:
+        showPagination: false
+  - id: activity-history-9fbb1e73-bb88-4a29-a30c-8f0f21fa5407
+    type: activity-history
+    settings:
+      knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+      recordMetadataId: CASE
+      objectId: case_id
+  - id: activity-history-63b11003-5d7c-47ac-ae8b-68db6f02f2d0
+    type: activity-history
+    settings:
+      knowledgeModelKey: salesforce-activity-data-explorer-3_knowlegdeModel_1685770540179
+      recordMetadataId: CEL_SF_CASE_ACTIVITIES
+      objectId: ${id}
+  - id: table-5f609aaa-a5d1-4a3f-bf57-c61d46184cbd
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASECOMMENT.CREATEDDATE
+            id: b1ce2e41-54c7-458f-b587-c42fdd21f8b8
+            order: 100
+          - field: CASECOMMENT.COMMENTBODY
+            id: 3cb854da-8dd4-447c-8c89-009107c188c2
+            order: 200
+            copyToClipboard: false
+          - field: CASECOMMENT.LASTMODIFIEDDATE
+            id: ad18bc57-7c1d-4fd4-b8e1-cc94511bc62e
+            order: 300
+        sortBy:
+          - field: CASECOMMENT.CREATEDDATE
+            direction: DESC
+            id: fd57e2a4-fb9a-404a-b7b0-70e1e8a74984
+            order: 100
+      options:
+        showPagination: false
