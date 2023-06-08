@@ -1,0 +1,305 @@
+metadata:
+  key: labor-productivity
+  template: false
+  name: "!Labor Productivity"
+  knowledgeModelKey: salesforce-activity-data-explorer-3_knowlegdeModel_1685770540179
+layout:
+  rows:
+    - id: row_7714dc4f-ba88-44c8-888a-9f8eb3e97eea
+      columns:
+        - id: column_2e51c34b-08e8-4381-9c36-f57b3796914f
+          componentId: dropdown-list-372448e5-a746-4849-8be2-399d102aa47f
+          size: "1"
+          type: default
+          order: 100
+        - id: column_010583e2-c653-40fa-9cd8-f80169eaaf74
+          componentId: global-search-4c110c48-d805-43b9-bce3-d73374e5e77e
+          size: "1"
+          type: default
+          order: 200
+        - id: column_f20c2292-c912-426b-a0e8-ea110e4d888c
+          componentId: time-filter-0966a7ef-d784-4e53-aa7d-f901056bd47d
+          size: "1"
+          type: default
+          order: 300
+      order: 50
+    - id: row_956f7c3e-eb6f-40bf-a2e3-76f95c80c499
+      growHeight: true
+      columns:
+        - id: column_4cb7fdbd-2fba-4bc3-9151-9e876bf5493f
+          layout:
+            rows:
+              - id: row_f9d52104-f0af-4ad3-99ba-c554493bf203
+                growHeight: true
+                columns:
+                  - id: column_cce60f51-ef92-4213-b4cc-2fee2faf4099
+                    componentId: process-explorer-d172ac49-6ecd-40d7-b82c-c7ab617e1e2d
+                    size: "1"
+                    type: panel
+                    order: 0
+                order: 100
+          size: 5/9
+          type: ""
+          height: ""
+          order: 100
+        - id: column_d020cde0-deca-438d-9e6d-d3063324cbe3
+          layout:
+            rows:
+              - id: row_3a400213-e697-4972-8679-f142603a60e6
+                columns:
+                  - id: column_3ab88ed9-c799-43ef-853a-5bc3cd4f385f
+                    componentId: text-box-4d3ecade-d763-4b16-93f8-51d7c456d9c5
+                    size: "1"
+                    type: panel
+                    order: 0
+                  - id: column_b3e29092-b838-45d3-8dce-f28792373c9e
+                    componentId: text-box-b2b1cdc3-a175-4ebe-9ff4-e3c023562801
+                    size: "1"
+                    type: panel
+                    order: 100
+                  - id: column_f6646adf-f230-46a8-a8fe-7cec0963425b
+                    componentId: text-box-338c686e-0d35-4d5b-b2fa-633e29c17b03
+                    size: "1"
+                    type: panel
+                    order: 200
+                  - id: column_b7d3bb14-b959-45b1-8a89-1d15188055e0
+                    componentId: text-box-f46e5c8d-adbc-41cb-b41e-0b5c19957faa
+                    size: "1"
+                    type: panel
+                    order: 300
+                order: 100
+              - id: row_bcb1a9d1-c4e9-45b1-8f91-11605edb03f9
+                columns:
+                  - id: column_d7977814-352f-468d-ab7b-6524e06bf52f
+                    componentId: kpi-list-fb4f61ec-b3ad-4f72-bfdd-04f4cd4079ae
+                    size: "1"
+                    type: panel
+                    order: 0
+                order: 200
+              - id: row_377fc132-4180-4eb4-bd3d-d40551fc72ad
+                columns:
+                  - id: column_35328b6b-c5d1-407d-9935-e14c6a39eddd
+                    componentId: execution-gap-list-9b8e0d6c-f7a8-4b4a-a8a9-dfb05e168397
+                    size: "1"
+                    type: panel
+                    order: 0
+                order: 300
+              - id: row_82185375-43d2-4911-94e9-60ad125e899d
+                growHeight: true
+                columns:
+                  - id: column_ac3fd0db-02a3-455a-8a19-91e6a2ef5479
+                    componentId: view-2c12f16b-7e1e-4b3b-bf80-c8a021dc56f1
+                    size: "1"
+                    type: panel
+                    order: 0
+                order: 400
+          size: 11/18
+          type: ""
+          order: 300
+      order: 100
+components:
+  - id: process-explorer-d172ac49-6ecd-40d7-b82c-c7ab617e1e2d
+    type: process-explorer
+    settings:
+      name: Customer Service
+      eventLogs:
+        - attribute: CEL_SF_CASE_ACTIVITIES.ACTIVITY_EN
+  - id: kpi-list-6aa5df77-747e-4d17-be22-16c2cd05fe16
+    type: kpi-list
+    settings:
+      name: KPI Overview
+      data:
+        kpis:
+          - kpi: impact_of_multihop_tickets
+            id: e5303e75-0b71-4e1b-8d80-598607853cc2
+            order: 100
+            show: true
+      options:
+        showSettings: false
+        showTarget: false
+        showPriority: false
+        showBenchmark: true
+        size: lg
+      styles:
+        overflow: full-width
+        position:
+          horizontal: full
+          vertical: bottom
+      infoText:
+        title: KPI Overview
+        content: Here you can view the key metrics for the respective business
+          objective. <br><br> <b>Touches per Order</b><br>The number of manual
+          activities per sales order item.<br><br><b>Productivity
+          Savings</b><br>The estimated benefit that can be realized with Celonis
+          based on customer benchmarks.<br><br><b>SO Items</b><br>The number of
+          processed sales order items.<br><br><b>Net Order Value</b><br>The net
+          order value of the processed sales orders.
+  - id: table-51e10511-797d-4641-9ded-58b356c05901
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASE.CAUSE_CODE__C
+            id: c50da6d9-f6fa-4dbf-b86c-c345d6207304
+            order: 100
+          - field: COUNT_TABLE__CASE
+            id: 51a771f6-677b-4ae4-9504-c245926e73ec
+            order: 200
+      options:
+        allowInvisibleColumns: false
+      name: Detail by Calling Reason
+  - id: dropdown-list-2f57f447-f632-4efc-bd49-9803fcc9cc71
+    type: dropdown-list
+    settings:
+      data:
+        columns:
+          - attribute: CASE.PRODUCT_AREA__C
+            id: 9bb8263d-340f-4c91-92c9-a828fde112c5
+            order: 100
+          - attribute: CASE.CAUSE_CODE__C
+            id: ea3136e8-b5ca-4f8d-a97e-c768879696f8
+            order: 200
+  - id: execution-gap-list-7364b55a-0f5d-4d9f-b5b1-157a5c21f9cd
+    type: execution-gap-list
+    settings:
+      sortBy:
+        defaultColumn: impact
+        direction: DESC
+      kpi: COUNT_TABLE__CASE
+      name: Top Execution Gaps
+      tableView: true
+      forwardFilterToProfileView: false
+      infoText:
+        title: Execution Gaps
+        content: This table lists the execution gaps with the biggest impact on customer
+          satisfaction. Closing these gaps will improve the business outcomes
+          and the overall process.
+      columns:
+        issue:
+          title: Category
+          hide: false
+        impact:
+          hide: false
+        kpi:
+          hide: false
+        occurrences:
+          hide: true
+  - id: view-2c12f16b-7e1e-4b3b-bf80-c8a021dc56f1
+    type: view
+    settings:
+      key: dd-problem-incident-mapping
+      allowHeader: false
+      allowFilters: false
+      shareFilters: false
+      shareSelections: false
+  - id: text-box-ae0a88f0-bee1-4d79-a0bc-7fe91428992e
+    type: text-box
+    settings:
+      title: ""
+      content: <p> <center><h3> Call Duration</h3> <br><span class='bold'><h1><font
+        size="10">{0}</h1></span></center> </p>
+  - id: kpi-list-fb4f61ec-b3ad-4f72-bfdd-04f4cd4079ae
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: escalation_rate
+            id: ae998190-4758-4c7f-91a5-12cd7be1ff44
+            order: 100
+            show: true
+          - kpi: impact_of_poorly_defined_incidents
+            id: 62c04ac5-ce71-4551-9af8-25c627dbffd2
+            order: 200
+            show: true
+          - kpi: late_execution_rate
+            show: true
+            id: ce151f49-deab-44dc-89b7-fdf63d5db6da
+            order: 300
+  - id: text-box-4d3ecade-d763-4b16-93f8-51d7c456d9c5
+    type: text-box
+    settings:
+      title: ""
+      content: <p> <center><h3>FTE Cost per<br> Ticket</h3> <br><span
+        class='bold'><h1>{0}</h1></span></center> </p>
+      placeholders:
+        - field: cost_per_unresolved_ticket
+  - id: text-box-b2b1cdc3-a175-4ebe-9ff4-e3c023562801
+    type: text-box
+    settings:
+      placeholders:
+        - field: number_of_late_executions
+      title: ""
+      content: <p> <center><h3> Number of<br> Late Executions</h3> <br><span
+        class='bold'><h1>{0}</h1></span></center> </p>
+  - id: text-box-338c686e-0d35-4d5b-b2fa-633e29c17b03
+    type: text-box
+    settings:
+      title: ""
+      content: <p> <center><h3> Number of <br>Tickets</h3> <br><span
+        class='bold'><h1>{0}</h1></span></center> </p>
+      placeholders:
+        - field: COUNT_TABLE__CASE
+  - id: text-box-f46e5c8d-adbc-41cb-b41e-0b5c19957faa
+    type: text-box
+    settings:
+      title: ""
+      content: <p> <center><h3> Realization <br>Potential</h3> <br><span
+        class='bold'><h1>{0}</h1></span></center> </p>
+      placeholders:
+        - field: realization_potential_duplicate_tickets_
+  - id: execution-gap-list-9b8e0d6c-f7a8-4b4a-a8a9-dfb05e168397
+    type: execution-gap-list
+    settings:
+      sortBy:
+        defaultColumn: impact
+        direction: DESC
+      kpi: COUNT_TABLE__CASE
+      name: Top Inefficiencies
+      tableView: true
+      forwardFilterToProfileView: false
+      infoText:
+        title: Execution Gaps
+        content: This table lists the execution gaps with the biggest impact on labour
+          productivity. Closing these gaps will improve the business outcomes
+          and the overall process.
+      columns:
+        issue:
+          title: Category
+          hide: false
+        impact:
+          hide: false
+        kpi:
+          hide: false
+        occurrences:
+          title: Number of tickets
+          hide: true
+  - id: process-explorer-fba20e06-b774-4bab-acf8-34f2ecb6b74c
+    type: process-explorer
+    settings:
+      eventLogs:
+        - eventLog: EL_CEL_SF_CASE_ACTIVITIES__ACTIVITY_EN
+          id: 6c753fb7-4f84-45e2-8271-ae6588c0cd56
+          order: 100
+      transitions: false
+      graphControls: panel
+  - id: dropdown-list-372448e5-a746-4849-8be2-399d102aa47f
+    type: dropdown-list
+    settings:
+      data:
+        columns:
+          - attribute: CASE.OWNER_FULL_NAME__C
+            id: aade6f56-86ae-4263-b005-96466d4861d3
+            order: 100
+            displayName: Filter By Owner
+      name: Filter Case Owner
+  - id: global-search-4c110c48-d805-43b9-bce3-d73374e5e77e
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.CASENUMBER
+      name: Search Case NO.
+  - id: time-filter-0966a7ef-d784-4e53-aa7d-f901056bd47d
+    type: time-filter
+    settings:
+      dateAttribute: CASE.CREATEDDATE
+      name: Filter by Date
