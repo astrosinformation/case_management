@@ -1,0 +1,63 @@
+metadata:
+  key: overview
+  template: false
+  name: "!Overview"
+  knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+layout:
+  rows:
+    - id: row_da094624-04e2-4f08-adeb-2c528f157f0e
+      columns:
+        - id: column_f0a5c991-5cec-449a-8544-343d82903b11
+          tabs:
+            - id: tab-92ad2da1-5433-4727-b853-4e35398b5fff
+              layout:
+                rows:
+                  - id: row_24587cd7-7721-4806-82ea-075063a64705
+                    columns:
+                      - id: column_be49f33d-6d84-4a3a-b670-3edc26cf9c65
+                        componentId: view-e2223cad-7e35-4d5d-9365-546f8a46186e
+                        size: "1"
+                        order: 0
+                    order: 100
+              label: Operational View
+              order: 300
+            - id: tab-aa066f2b-82e3-4299-83f6-820541e56140
+              layout:
+                rows:
+                  - id: row_92d8ac40-961b-4fd2-bb62-ceada9924a2d
+                    columns:
+                      - id: column_111196ba-9bef-4246-b63c-d2215b6a22b8
+                        componentId: view-f038bcf2-29a6-4872-a356-b3c74fdd4dbf
+                        size: "1"
+                        order: 0
+                    order: 100
+              label: Analytical View
+              order: 400
+          size: "1"
+          type: default
+          order: 100
+      order: 100
+components:
+  - id: view-e39c236a-dff6-4111-8a9c-dbd139ae0360
+    type: view
+    settings:
+      key: operational-view
+  - id: view-7bab2f39-d96d-4e09-bc50-abd7e963d68d
+    type: view
+    settings:
+      key: operational-view
+      allowHeader: false
+      allowFilters: false
+  - id: view-c3b1f67e-3f79-4529-b8fa-c0eaddf38c06
+    type: view
+    settings:
+      key: analytical-view
+      allowHeader: false
+  - id: view-e2223cad-7e35-4d5d-9365-546f8a46186e
+    type: view
+    settings:
+      key: operational-view
+  - id: view-f038bcf2-29a6-4872-a356-b3c74fdd4dbf
+    type: view
+    settings:
+      key: analytical-view
