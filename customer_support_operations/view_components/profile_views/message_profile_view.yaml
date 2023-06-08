@@ -1,0 +1,40 @@
+metadata:
+  key: message-profile-view
+  template: false
+  name: "!Message Profile View"
+  knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+  knowledgeObjectId: CASEFEED
+  profileView: true
+layout:
+  rows:
+    - id: row_3ef23263-46e7-4314-9fc6-0d74e2897778
+      columns:
+        - id: column_888dac4d-763a-480d-bc79-1e80806b7355
+          componentId: text-box-43f316ed-767d-4c65-a4a3-ab86edb6eff3
+          size: "1"
+          type: default
+          order: 100
+      order: 100
+    - id: row_1e8d9578-a910-45c8-83d1-6d738512de1e
+      columns:
+        - id: column_7896776b-c82e-43cf-b2ea-7f9fe95aeca5
+          componentId: text-box-eeb48df0-783b-4145-87c8-a351c3fa5074
+          size: "1"
+          type: default
+          order: 100
+      order: 200
+components:
+  - id: text-box-43f316ed-767d-4c65-a4a3-ab86edb6eff3
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASEFEED.BODY
+      title: Full Message
+      content: "{0}"
+  - id: text-box-eeb48df0-783b-4145-87c8-a351c3fa5074
+    type: text-box
+    settings:
+      placeholders:
+        - field: CASEFEED.CREATEDDATE
+      title: "Timestamp:"
+      content: "{0}"
