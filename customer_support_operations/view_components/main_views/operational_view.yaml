@@ -1,0 +1,529 @@
+metadata:
+  key: operational-view
+  template: false
+  name: "!Operational View"
+  knowledgeModelKey: sf-data-explorer_knowlegdeModel_1670059004257
+variables:
+  - id: 6b9cd8b6-2324-467d-bc37-12d30b62dc76
+    name: currentKpiName
+  - id: 6b46cb15-df5a-43dc-b9ed-2f563637820a
+    name: currentKpiId
+  - id: b199066d-9dd7-4859-ac8f-ac906a8c2c5b
+    name: currentKpiName2
+  - id: 39f990e2-87d0-4c40-a439-dad75aadbd1d
+    name: currentKpiId2
+  - id: 4fabf487-641f-46e0-bf8d-3f6a9273d080
+    name: currentKpiName3
+  - id: 600522be-aec8-47ff-a64c-052d294c52ed
+    name: currentKpiId3
+layout:
+  rows:
+    - id: row_f8e20b80-7759-4b9f-8dde-ff52c2541d2c
+      columns:
+        - id: column_0f20ae82-21cd-4c9a-9864-30a516e82f99
+          componentId: kpi-list-d777fce9-b972-4b76-9538-ba4da2dd46e8
+          size: "1"
+          type: default
+          order: 0
+        - id: column_6b8fb216-7807-4e7c-a6fb-70c915ab573e
+          componentId: kpi-list-05cfc3e3-98bd-4334-b63b-61d1ec2e2d9f
+          size: "1"
+          type: default
+          order: 200
+        - id: column_91322507-294b-4252-8805-64c2a55130c6
+          componentId: kpi-list-d7242fd6-0cbc-4a7c-ba63-5ab1de8dbe83
+          size: "1"
+          type: default
+          order: 300
+      order: 100
+    - id: row_05592d00-ae5f-4bb4-851c-c4e80aa19a57
+      columns:
+        - id: column_c2b1514d-135a-4b7d-ba85-a91948d7664b
+          componentId: kpi-list-ba62f637-1ffa-4890-be90-c60bed068033
+          size: "4"
+          type: default
+          order: 100
+        - id: column_63052f01-e052-4628-bdc3-94067f5ea757
+          componentId: dropdown-list-eac4b814-89b3-423f-8442-923ac3fd2b16
+          size: "1"
+          type: default
+          order: 200
+        - id: column_af6e7384-07fa-4bfa-8932-4dc377d36bc8
+          componentId: global-search-60335576-5d9e-4c98-8ee4-1e2d3a868781
+          size: "1"
+          order: 250
+        - id: column_1f3be796-e28e-4f71-8148-f3d3e86283e0
+          componentId: time-filter-9b9554be-4873-4bf1-a16e-25107c7e11fd
+          size: "1"
+          order: 275
+        - id: column_de1ae0fa-60cd-4514-b1ea-b04ccda7460b
+          componentId: button-list-65960349-a214-436c-b972-c27158eb6347
+          size: "1"
+          order: 300
+      order: 200
+    - id: row_0f0e72d7-d1db-4911-9684-4d55b01c231f
+      columns:
+        - id: column_94f1278c-b114-4c31-8eba-56e408f59d1e
+          componentId: quick-filters-bbb3bc06-7142-4284-85f8-5348f5718ef9
+          size: "1"
+          type: default
+          order: 100
+      order: 250
+    - id: row_5ea3023d-4110-47b3-a3ff-de721adf6c43
+      columns:
+        - id: column_817a972c-22ec-4b4c-b698-cca6e32aa803
+          componentId: quick-filters-54836ef7-07fd-4158-8814-cc31dddf2f7e
+          size: "1"
+          type: default
+          order: 100
+      order: 275
+    - id: row_651bd17f-bd1c-4043-9731-7b5259408d7b
+      columns:
+        - id: column_5542e0ee-18cd-43df-a245-c5fc165623b9
+          componentId: global-search-36ab61dd-f3d6-4cac-9273-b975e6faa45e
+          size: "1"
+          type: default
+          order: 100
+        - id: column_e5dcf407-51ae-4f1d-81e6-966e68b5f3cc
+          componentId: global-search-d6c4a514-a224-4bb9-a7b9-13d1fa7ae5af
+          size: "1"
+          type: default
+          order: 200
+        - id: column_52d7d09e-f24d-4f56-84c4-58f13828217c
+          componentId: global-search-c4ac452d-a167-48f9-a9ba-bd6dd905df86
+          size: "1"
+          type: default
+          order: 300
+        - id: column_7e52f01b-7816-45b3-8b2d-582a6b2fef68
+          componentId: global-search-0ff88521-f41d-4703-8836-ac2537d0c363
+          size: "1"
+          order: 400
+      order: 287
+    - id: row_815aa83f-324a-446a-83d7-dc9d9c8b1f87
+      columns:
+        - id: column_69538c3b-4aa3-4cfe-ae07-500a79a55921
+          componentId: global-search-422cf350-f159-4cf2-aa1a-f27968fba66d
+          size: "1"
+          type: default
+          order: 100
+        - id: column_8cfda551-b2d7-41ea-a11b-17637b0e9fe3
+          componentId: global-search-10205b71-9063-4bb5-b4da-7b915c71ef5f
+          size: "1"
+          type: default
+          order: 200
+        - id: column_361250ed-9f0f-496f-bf53-27a840013ebd
+          componentId: global-search-86bacb19-27ae-4d73-8def-1739e2e6044e
+          size: "1"
+          type: default
+          order: 300
+        - id: column_564c3a4e-10b4-4935-b90b-3ed8cd4ad5e7
+          componentId: global-search-e99c4d7c-c4c5-43aa-b93b-e1b889823d52
+          size: "1"
+          order: 400
+      order: 293
+    - id: row_763d01d0-eda8-4b87-ae15-f20e7b330ee8
+      growHeight: false
+      columns:
+        - id: column_13789e4d-305f-4f7b-8df3-569b3e0e08b0
+          componentId: table-030c4f76-d679-4fd5-93f4-85cefc3f680f
+          size: "1"
+          type: default
+          order: 600
+      height: "600"
+      order: 300
+components:
+  - id: kpi-list-f215b555-10a7-4b40-a432-023ff0dfb853
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: sev_1_cases
+            show: true
+            id: 85fd2add-5626-4733-827e-461b779b3223
+            order: 100
+          - kpi: sev_2_cases
+            show: true
+            id: a66b6286-608e-41f5-9e3c-c1ee18018826
+            order: 200
+          - kpi: sev_3_cases
+            show: true
+            id: 8828931e-a7c5-44eb-8531-6ac975a205a8
+            order: 300
+          - kpi: sev_4_cases
+            show: true
+            id: 30d7221e-6ca2-4007-8a53-6f623a6c5987
+            order: 400
+      name: Case Count by Severity
+  - id: kpi-list-3e929532-e960-404f-bd42-bb59c6533d1f
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: waiting_for_customer
+            show: true
+            id: 7cc97753-c377-425f-85d2-8ebf9fb13346
+            order: 100
+          - kpi: waiting_for_dev
+            show: true
+            id: 71325a3b-c5e5-48f3-95ee-51bdc74ed7cd
+            order: 200
+          - kpi: waiting_internal
+            show: true
+            id: 3ca961d4-8881-466a-8ae8-b319f0611401
+            order: 300
+      name: Case Count by On Hold Reason
+  - id: kpi-list-8695e68e-4344-423f-92c7-c6fd21235374
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: incidents
+            show: true
+            id: 09acc013-9ce1-44d5-9815-c5da0d875931
+            order: 100
+          - kpi: questions
+            show: true
+            id: cb70ccb3-5f6e-4a73-95ed-0ef74fea5d39
+            order: 200
+          - kpi: service_requests
+            show: true
+            id: 21999c2c-2368-42ad-b9dd-146c31aa8ea4
+            order: 300
+          - kpi: change_requests
+            show: true
+            id: 1a02ad5f-3470-4d67-85bd-d2982f1b1443
+            order: 400
+      name: Case Count by Case Type
+  - id: kpi-list-d777fce9-b972-4b76-9538-ba4da2dd46e8
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: sev_1_cases
+            show: true
+            id: 62c3f742-cd03-47a7-8e0a-dae93af74d29
+            order: 100
+          - kpi: sev_2_cases
+            show: true
+            id: 7c11e555-54c2-494e-b093-a909d6bb2b56
+            order: 200
+          - kpi: sev_3_cases
+            show: true
+            id: 0863c0d9-1f28-4c7b-9f97-7f348890d394
+            order: 300
+          - kpi: sev_4_cases
+            show: true
+            id: ad688cef-3396-45b8-9f7a-67e91de1b666
+            order: 400
+      name: Case Count by Severity
+  - id: kpi-list-05cfc3e3-98bd-4334-b63b-61d1ec2e2d9f
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: waiting_for_customer
+            show: true
+            id: e614e40f-5a66-45dc-a58b-b80a6204f931
+            order: 100
+          - kpi: waiting_for_dev
+            show: true
+            id: 5c39b4b9-252a-433c-9112-081cf8ab282b
+            order: 200
+          - kpi: waiting_internal
+            show: true
+            id: 674bc12d-2342-4e2f-a941-3eff29837a11
+            order: 300
+      name: Case Count by On Hold Reason
+  - id: kpi-list-d7242fd6-0cbc-4a7c-ba63-5ab1de8dbe83
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: incidents
+            show: true
+            id: 7c676dd9-ac70-4935-bc63-3d5249de4a47
+            order: 100
+          - kpi: questions
+            show: true
+            id: 123d58be-4465-4186-beb7-5ba950d07572
+            order: 200
+          - kpi: service_requests
+            show: true
+            id: c8095548-d52c-41b5-9fa7-ea0f50377317
+            order: 300
+          - kpi: change_requests
+            show: true
+            id: c2884eb4-f28b-4f75-ab22-bc588a980b37
+            order: 400
+      name: Case Count by Case Type
+      styles:
+        position:
+          vertical: center
+          horizontal: full
+  - id: kpi-list-ba62f637-1ffa-4890-be90-c60bed068033
+    type: kpi-list
+    settings:
+      data:
+        kpis:
+          - kpi: COUNT_TABLE__CASE
+            show: true
+            id: 717456d0-399b-4596-812c-105acf08ccb6
+            order: 100
+          - kpi: new_tickets
+            show: true
+            id: 4155b78d-c18a-4ab4-8008-e0d17c5435e3
+            order: 200
+          - kpi: tickets_in_progress
+            show: true
+            id: 529576ec-cfde-43f1-b235-c4a597131e0a
+            order: 300
+          - kpi: tickets_on_hold
+            show: true
+            id: c9b99dac-1f32-4ea0-a4f9-04fb33696965
+            order: 400
+          - kpi: tickets_solution_provided
+            show: true
+            id: 29d6f500-9792-4d99-9e7c-8a9818b829e6
+            order: 500
+        onClick:
+          update:
+            variables:
+              name: currentKpiName
+              id: currentKpiId
+      name: Number of Open Tickets (Per Status)
+  - id: dropdown-list-eac4b814-89b3-423f-8442-923ac3fd2b16
+    type: dropdown-list
+    settings:
+      data:
+        columns:
+          - attribute: CASE.OWNER_FULL_NAME__C
+            id: b987d0e9-a4f3-4255-974f-208660c3b505
+            order: 100
+      name: Filter Case Owner
+  - id: global-search-60335576-5d9e-4c98-8ee4-1e2d3a868781
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.CASENUMBER
+      name: Search Case NO.
+  - id: time-filter-9b9554be-4873-4bf1-a16e-25107c7e11fd
+    type: time-filter
+    settings:
+      dateAttribute: CASE.CREATEDDATE
+      name: Filter by Date
+  - id: button-list-65960349-a214-436c-b972-c27158eb6347
+    type: button-list
+    settings:
+      buttons:
+        - label: Go To Recent Cases
+          id: 4da8d32f-b962-4534-a973-c166adedc9c5
+          order: 100
+          variant: primary
+          onClick:
+            href: https://celonis.lightning.force.com/lightning/o/Case/list?filterName=Recent
+            openInNewTab: true
+      name: Recently Viewed
+  - id: chart-b30e002c-1bfa-4769-b43e-42a25e501dd4
+    type: chart
+    settings:
+      visuals:
+        - mark:
+            type: bar
+          id: 316c65ba-2549-4075-97e0-ea57dd711f42
+          order: 100
+      sortBy: []
+      limit: 1000
+  - id: table-030c4f76-d679-4fd5-93f4-85cefc3f680f
+    type: table
+    settings:
+      data:
+        columns:
+          - field: CASE.CASENUMBER
+            id: e3279c77-d71e-47dc-9fc3-6996ae0499bc
+            order: 100
+            onClick:
+              openView:
+                profileView: true
+                carryFilters: true
+                openInSideOverlay: true
+            showAlerts: true
+          - field: CASE.SEVERITY__C
+            id: 35dac3a7-0f33-4ed9-b1ae-e7eebfa2fe2b
+            order: 200
+          - field: CASE.AUGMENTED_priority_score
+            id: b001c26e-9231-4c20-a18b-6891c8b06d85
+            order: 300
+          - field: CASE.CREATEDDATE
+            id: 798c2114-2fe4-484d-9c8f-29bd3e44a336
+            order: 400
+          - field: CASE.LASTMODIFIEDDATE
+            id: 141f7142-09a6-4293-91b3-61133f098237
+            order: 500
+          - field: CASE.STATUS
+            id: ad6e9776-5ae6-4379-bff6-39b7b799ff91
+            order: 600
+          - field: CASE.OWNER_FULL_NAME__C
+            id: ee24399e-9e78-40e7-a2d3-bdb7f7c24377
+            order: 700
+          - field: CASE.SUBJECT
+            id: ab3be125-d36d-43b3-9fdd-d7647234fa75
+            order: 800
+          - field: CASE.CREATED_BY_FULL_NAME__C
+            id: 61852f34-609d-43de-bb99-f505fee022eb
+            order: 900
+          - field: CASE.CONTACTEMAIL
+            id: 6da952e3-e558-4c53-a126-eba308aad05c
+            order: 1000
+          - field: ACCOUNT.NAME
+            id: cce33654-0a89-4a59-aab0-25cdc53611d0
+            order: 1100
+          - field: CASE.ISESCALATED
+            id: 639cf1eb-ba18-41e2-a25d-980cce129d2d
+            order: 1200
+            displayContentRule: DISPLAY_RED_IF_ESCALATED
+          - field: CASE.WORKAROUND_PROVIDED__C
+            id: add2dac8-26fa-4f11-a138-427220aa38fe
+            order: 1300
+            displayContentRule: DISPLAY_YELLOW_IF_WORKAROUNDPROVIDED
+          - field: CASE.X2ND_LEVEL__C
+            id: 2cc9942f-5054-436b-87f4-80745ecba279
+            order: 1400
+            displayContentRule: DISPLAY_GREEN_IF_SECONDLEVEL
+        sortBy: []
+      options:
+        showPagination: false
+        resizeMode: expand
+      name: Cases Overview
+    filters:
+      - name: currentKpiName
+        id: ${ (currentKpiId === 'tickets_in_progress'  && 'in_progress') ||
+          (currentKpiId === 'tickets_on_hold' && 'on_hold') || (currentKpiId ===
+          'tickets_solution_provided' && 'solution_provided') || (currentKpiId
+          === 'new_tickets' && 'new_tickets') }
+      - name: currentKpiName2
+        id: ${ (currentKpiId2 === 'sev_1_cases'  && 'sev_1') || (currentKpiId2 ===
+          'sev_2_cases'  && 'sev_2') || (currentKpiId2 === 'sev_3_cases'  &&
+          'sev_3') || (currentKpiId2 === 'sev_4_cases'  && 'sev_4') }
+      - name: currentKpiName3
+        id: ${ (currentKpiId3 === 'waiting_for_customer'  && 'waiting_for_customer') ||
+          (currentKpiId3 === 'waiting_for_dev' && 'waiting_for_development') ||
+          (currentKpiId3 === 'waiting_internal' && 'waiting_on_internal') }
+  - id: quick-filters-bbb3bc06-7142-4284-85f8-5348f5718ef9
+    type: quick-filters
+    settings:
+      filters:
+        - filter: premium
+          id: 2a72d198-e7b7-454b-8fa1-cd04e6eb4c95
+          order: 100
+        - filter: high_priority
+          id: 8512078d-b978-45ae-8308-f1cb0d32b121
+          order: 200
+        - filter: critical_priority
+          id: e8bdeaa5-3041-4414-b181-cfcb0eaa94fa
+          order: 300
+        - filter: medium_priority
+          id: cb145a03-c86a-48f0-b683-61b69502a24a
+          order: 400
+        - filter: normal_priority
+          id: 61741ee8-8899-4a19-b01c-3effb47e9a62
+          order: 500
+        - filter: low_priority
+          id: c24ea543-2ba4-4e1c-9a3f-054351050a40
+          order: 600
+        - filter: incident
+          id: 9874ab21-b578-413e-8bde-15643f9ac742
+          order: 700
+        - filter: question
+          id: 953c32f5-9cb2-4bdc-bcab-19fed5a235a2
+          order: 800
+        - filter: service_requests
+          id: f94bb5c5-e107-4a2b-8e9e-33005bd85833
+          order: 900
+        - filter: change_requests
+          id: 466927d9-9847-4291-acc3-10fc62ebbe3d
+          order: 1000
+      attributeFilters: []
+      label: ""
+      name: Filter Salesforce case data according your specific business intelligence
+        needs...what questions do you have?
+  - id: quick-filters-54836ef7-07fd-4158-8814-cc31dddf2f7e
+    type: quick-filters
+    settings:
+      filters:
+        - filter: sev_1
+          id: 6afe1484-c312-4e86-8689-12812dfcaba3
+          order: 100
+        - filter: sev_2
+          id: 7b3cdcd4-5ade-43d9-b778-9c77414998df
+          order: 200
+        - filter: sev_3
+          id: 2a69004d-ccd8-4266-a46b-362ae983ffda
+          order: 300
+        - filter: sev_4
+          id: 2bf8f963-aca2-4dab-9d0d-0073f20eb4f9
+          order: 400
+        - filter: waiting_for_customer
+          id: 8ddcd2fd-620f-46f3-9220-ad2ca94038cc
+          order: 500
+        - filter: waiting_for_development
+          id: 8fd43fa7-349c-4f0e-ace4-70d8503946ab
+          order: 600
+        - filter: waiting_on_internal
+          id: b136b486-c89a-4efd-847d-2ceefce0fbbb
+          order: 700
+      attributeFilters: []
+      label: ""
+  - id: global-search-36ab61dd-f3d6-4cac-9273-b975e6faa45e
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.DESCRIPTION
+      name: Search Case Descriptions
+  - id: global-search-d6c4a514-a224-4bb9-a7b9-13d1fa7ae5af
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.TICKET_DESCRIPTION__C
+      name: Search Ticket Descriptions
+  - id: global-search-c4ac452d-a167-48f9-a9ba-bd6dd905df86
+    type: global-search
+    settings:
+      search:
+        - attribute: CASEFEED.BODY
+      name: Search Case Comments
+  - id: global-search-0ff88521-f41d-4703-8836-ac2537d0c363
+    type: global-search
+    settings:
+      search:
+        - attribute: EMAILMESSAGE.TEXTBODY
+      name: Search Case Emails
+  - id: global-search-422cf350-f159-4cf2-aa1a-f27968fba66d
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.ISSUE_CLARIFICATION__C
+      name: Search Problem Fields
+  - id: global-search-10205b71-9063-4bb5-b4da-7b915c71ef5f
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.ISSUE_VERIFICATION__C
+      name: Search Error Fields
+  - id: global-search-86bacb19-27ae-4d73-8def-1739e2e6044e
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.ACTION_PLAN__C
+      name: Search Solution Fields
+  - id: global-search-b33d5166-871a-49c4-8206-de2cc1a64d20
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.KM_RESEARCH__C
+      name: Search KM Research Fields
+  - id: global-search-e99c4d7c-c4c5-43aa-b93b-e1b889823d52
+    type: global-search
+    settings:
+      search:
+        - attribute: CASE.KM_RESEARCH__C
+      name: Search KM Research Fields
